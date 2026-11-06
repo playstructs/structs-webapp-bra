@@ -11,7 +11,7 @@ name: Pages
 
 on:
   push:
-    branches: [game-layer]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
