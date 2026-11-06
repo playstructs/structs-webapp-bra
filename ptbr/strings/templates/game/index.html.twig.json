@@ -1,0 +1,12 @@
+{
+  "{% block title %}Structs{% endblock %}": "{% block title %}estrut.net{% endblock %}",
+  "alt=\"Structs logo with animated progress bar\"": "alt=\"Logo do Structs com barra de progresso animada\"",
+  "<h1>Loading Assets</h1>": "<h1>Carregando Recursos</h1>",
+  "$keep": [
+    "{% extends 'base.html.twig' %}",
+    "{% block title %}estrut.net{% endblock %}",
+    "{% block body %}",
+    "{% endblock %}",
+    "Structs"
+  ]
+}

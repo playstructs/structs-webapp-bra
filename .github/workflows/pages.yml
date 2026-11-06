@@ -1,0 +1,64 @@
+# Builds the static site and publishes it to GitHub Pages.
+#
+# One-time setup: Settings › Pages › Source: "GitHub Actions". The page and its
+# assets use absolute paths (/js, /img, /lottie, as structs-webapp does), so the
+# site must be served from the root of its domain: a custom domain, not
+# <owner>.github.io/structs-webapp-bra/.
+#
+# Optional repository variables (Settings › Secrets and variables › Actions ›
+# Variables) set the build's PTBR_* values; see README.md › Which guild.
+name: Pages
+
+on:
+  push:
+    branches: [game-layer]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm ci
+
+      - uses: actions/configure-pages@v5
+
+      - run: npm test
+
+      - run: npm run build
+        env:
+          PTBR_GUILD_ID: ${{ vars.PTBR_GUILD_ID }}
+          PTBR_LCD_URL: ${{ vars.PTBR_LCD_URL }}
+          PTBR_GUILD_API: ${{ vars.PTBR_GUILD_API }}
+          PTBR_GRASS_URL: ${{ vars.PTBR_GRASS_URL }}
+          PTBR_CHAIN_WS: ${{ vars.PTBR_CHAIN_WS }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

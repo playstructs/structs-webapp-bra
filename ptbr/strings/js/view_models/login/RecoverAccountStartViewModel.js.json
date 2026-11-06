@@ -1,0 +1,9 @@
+{
+  "'Recover Account'": "'Recuperar Conta'",
+  "waitingOptions.waitingMessage = 'Recovering your account.';": "waitingOptions.waitingMessage = 'Recuperando sua conta.';",
+  "<div>Please enter the 12-word Recovery Key associated with your account.</div>": "<div>Digite a Chave de Recuperação de 12 palavras associada à sua conta.</div>",
+  ">What is my Recovery Key?</a>": ">O que é minha Chave de Recuperação?</a>",
+  "<span>Recovery Key</span>": "<span>Chave de Recuperação</span>",
+  "placeholder=\"word word word ...\"": "placeholder=\"palavra palavra palavra ...\"",
+  ">Next</button>": ">Avançar</button>"
+}

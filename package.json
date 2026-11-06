@@ -1,0 +1,20 @@
+{
+  "name": "estrut-net",
+  "version": "0.1.0",
+  "private": true,
+  "description": "estrut.net: the structs-webapp game client, built from the structs-webapp submodule with its text in Brazilian Portuguese.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "postinstall": "npm --prefix structs-webapp/src ci --no-audit --no-fund",
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=production",
+    "audit:ptbr": "node ptbr/audit.cjs",
+    "test": "node ptbr/audit.cjs --strict",
+    "update:webapp": "git submodule update --remote structs-webapp && npm --prefix structs-webapp/src ci --no-audit --no-fund && npm run audit:ptbr"
+  },
+  "devDependencies": {
+    "webpack": "^5.109.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "'Undiscovered Ore',": "'Minério Não Descoberto',",
+  "'Ore Mined',": "'Minério Extraído',",
+  ">Launch Fleet</a>": ">Lançar Frota</a>",
+  "$keep": [
+    "PID #"
+  ]
+}

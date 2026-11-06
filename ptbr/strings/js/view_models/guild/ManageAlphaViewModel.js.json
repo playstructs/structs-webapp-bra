@@ -1,0 +1,17 @@
+{
+  "`Alpha will be removed from your inventory and added to the reactor.`": "`O Alfa será retirado do seu inventário e adicionado ao reator.`",
+  "`Alpha will be removed from the reactor and put on cooldown.`": "`O Alfa será retirado do reator e entrará em tempo de espera.`",
+  "The Guild Minimum is ${this.joinInfusionMinimum} Alpha Matter.": "O Mínimo da Guilda é ${this.joinInfusionMinimum} de Matéria Alfa.",
+  "? 'Infusing...' : 'Defusing...';": "? 'Infundindo...' : 'Retirando...';",
+  "'The change continues if you leave this screen.'": "'A alteração continua se você sair desta tela.'",
+  "'Confirmed on chain. The reactor display has not caught up yet; check it again shortly.'": "'Alteração confirmada. A tela do reator ainda não foi atualizada; confira novamente em instantes.'",
+  "MenuPage.setPageTemplateHeaderBtn('Manage Alpha',": "MenuPage.setPageTemplateHeaderBtn('Gerenciar Alfa',",
+  "alt=\"alpha reactor\"": "alt=\"reator alfa\"",
+  "'Alpha to infuse',": "'Alfa a infundir',",
+  "'Expected energy supply',": "'Fornecimento de energia esperado',",
+  "sui-mod-secondary\">Cancel</a>": "sui-mod-secondary\">Cancelar</a>",
+  "sui-mod-primary\">Save Changes</a>": "sui-mod-primary\">Salvar Alterações</a>",
+  "$keep": [
+    "[ManageAlpha] reactor state unavailable:"
+  ]
+}

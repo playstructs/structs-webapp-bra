@@ -1,0 +1,12 @@
+{
+  "let html = 'Non-Player Address';": "let html = 'Endereço de Não Jogador';",
+  ": 'Name Redacted';": ": 'Nome Oculto';",
+  "? `Player Details` : 'Recipient Details';": "? `Dados do Jogador` : 'Dados do Destinatário';",
+  "<div>Guild</div>": "<div>Guilda</div>",
+  "            Player ID\n": "            ID do Jogador\n",
+  "data-sui-tooltip=\"The unique in-game identifier for the player.\"": "data-sui-tooltip=\"O identificador único do jogador no jogo.\"",
+  "            Blockchain Address\n": "            Endereço da Conta\n",
+  "data-sui-tooltip=\"The public wallet address for the player.\"": "data-sui-tooltip=\"O endereço público da conta do jogador.\"",
+  "MenuPage.setPageTemplateHeaderBtn('Recipient',": "MenuPage.setPageTemplateHeaderBtn('Destinatário',",
+  ">Select This Player</a>": ">Selecionar Este Jogador</a>"
+}

@@ -1,0 +1,17 @@
+{
+  "options.headerBtnLabel = 'Manage Device';": "options.headerBtnLabel = 'Gerenciar Dispositivo';",
+  "options.waitingMessage = 'Saving changes.';": "options.waitingMessage = 'Salvando alterações.';",
+  "location = `[PRIMARY DEVICE]<br>${location}`;": "location = `[DISPOSITIVO PRINCIPAL]<br>${location}`;",
+  "sui-text-secondary\">Primary Device Logout</div>": "sui-text-secondary\">Saída do Dispositivo Principal</div>",
+  "sui-text-ticker\">Remote logout is not available for primary devices. Please log out using the primary device itself.</div>": "sui-text-ticker\">Não é possível sair remotamente de dispositivos principais. Saia pelo próprio dispositivo principal.</div>",
+  ">Log Out</a>": ">Sair</a>",
+  "        'Manage Device',\n": "        'Gerenciar Dispositivo',\n",
+  "<div>${userAgent.getBrowser()} Browser</div>": "<div>Navegador ${userAgent.getBrowser()}</div>",
+  "<div>Device permissions:</div>": "<div>Permissões do dispositivo:</div>",
+  "\">\n                Manage Devices\n": "\">\n                Gestão de Dispositivos\n",
+  "data-sui-tooltip=\"The ability to logout other devices or change their permissions.\"": "data-sui-tooltip=\"Permite sair de outros dispositivos ou alterar as permissões deles.\"",
+  "\">\n                Transfer Assets\n": "\">\n                Transferir Recursos\n",
+  "data-sui-tooltip=\"The ability to send Alpha to other accounts.\"": "data-sui-tooltip=\"Permite enviar Alfa para outras contas.\"",
+  ">Cancel</a>": ">Cancelar</a>",
+  ">Save</a>": ">Salvar</a>"
+}

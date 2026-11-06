@@ -1,0 +1,20 @@
+{
+  "alt=\"3 dots loading animation\"": "alt=\"Animação de carregamento com três pontos\"",
+  "primaryBtnLabel = 'Command';": "primaryBtnLabel = 'Comandar';",
+  "alphaBaseCard.alertMessage = 'All Alpha extracted.';": "alphaBaseCard.alertMessage = 'Todo o Alfa foi extraído.';",
+  "secondaryBtnLabel = 'Depart';": "secondaryBtnLabel = 'Partir';",
+  "alphaBaseCard.alertMessage = 'Depart planet?';": "alphaBaseCard.alertMessage = 'Deixar o planeta?';",
+  "`Fleet will travel to an undiscovered world.`": "`A Frota viajará para um mundo desconhecido.`",
+  "primaryBtnLabel = 'Confirm';": "primaryBtnLabel = 'Confirmar';",
+  "secondaryBtnLabel = 'Cancel';": "secondaryBtnLabel = 'Cancelar';",
+  "`Fleet has arrived at ${this.gameState.keyPlayers[PLAYER_TYPES.PLAYER].planet.name}.`": "`A Frota chegou a ${this.gameState.keyPlayers[PLAYER_TYPES.PLAYER].planet.name}.`",
+  "primaryBtnLabel = 'View';": "primaryBtnLabel = 'Ver';",
+  "secondaryBtnLabel = 'Dismiss';": "secondaryBtnLabel = 'Fechar';",
+  "raidCard.generalMessage = 'No Raid active.';": "raidCard.generalMessage = 'Nenhuma Incursão ativa.';",
+  "secondaryBtnLabel = 'Scan';": "secondaryBtnLabel = 'Escanear';",
+  "raidCard.alertMessage = 'No CMD Ship.';": "raidCard.alertMessage = 'Sem Nave de Comando.';",
+  "`Fleet has begun raid on ${this.gameState.keyPlayers[PLAYER_TYPES.RAID_ENEMY].getUsername()}.`": "`A Frota iniciou uma Incursão contra ${this.gameState.keyPlayers[PLAYER_TYPES.RAID_ENEMY].getUsername()}.`",
+  "secondaryBtnLabel = 'Retreat';": "secondaryBtnLabel = 'Recuar';",
+  "raidCard.alertMessage = 'Abandon raid?';": "raidCard.alertMessage = 'Abandonar Incursão?';",
+  "`Fleet will return to Alpha Base.`": "`A Frota voltará à Base Alfa.`"
+}

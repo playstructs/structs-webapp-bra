@@ -1,0 +1,15 @@
+{
+  "<div class=\"sui-text-header\">Signing Paused</div>": "<div class=\"sui-text-header\">Envio de ordens pausado</div>",
+  "This browser has saved transaction records it cannot read, so new transactions are paused.\n                Setting them aside keeps a copy and resumes signing. A set-aside transaction may already\n                have been sent, so check your balances before repeating an action.": "Este navegador tem registros de ordens salvos que não consegue ler, por isso novas ordens estão pausadas.\n                Separá-los mantém uma cópia e retoma o envio de ordens. Uma ordem separada pode já\n                ter sido enviada, então confira seus saldos antes de repetir uma ação.",
+  "sui-mod-destructive\">Set Aside and Continue</button>": "sui-mod-destructive\">Separar e Continuar</button>",
+  "MenuPage.setPageTemplateHeaderBtn('Account');": "MenuPage.setPageTemplateHeaderBtn('Conta');",
+  "sui-mod-destructive\">Log Out</button>": "sui-mod-destructive\">Sair</button>",
+  "<span class=\"sui-text-header\">Profile</span>": "<span class=\"sui-text-header\">Perfil</span>",
+  "<span class=\"sui-text-header\">Transfers</span>": "<span class=\"sui-text-header\">Transferências</span>",
+  "<span class=\"sui-text-header\">Devices</span>": "<span class=\"sui-text-header\">Dispositivos</span>",
+  "\">${addressCount} Devices Active</div>": "\">Dispositivos Ativos: ${addressCount}</div>",
+  "<span class=\"sui-text-header\">Combat Tutorial</span>": "<span class=\"sui-text-header\">Treinamento de Combate</span>",
+  "$keep": [
+    "PID #"
+  ]
+}

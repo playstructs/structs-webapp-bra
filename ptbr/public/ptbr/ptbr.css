@@ -1,0 +1,20 @@
+/*
+ * Portuguese letters for structs-webapp's fonts.
+ *
+ * DirectiveZero and ExtremeHazard are ASCII only. Rather than restyle every
+ * rule that uses them, each family gains a second face covering only the
+ * characters ptbr/art/fonts.py draws for it. The browser takes those from here
+ * and everything else from webapp's own fonts.
+ */
+
+@font-face {
+  font-family: DirectiveZero;
+  src: url(/ptbr/fonts/DirectiveZero-ptbr.woff2) format('woff2');
+  unicode-range: U+AA, U+B0, U+BA, U+C0-C3, U+C7, U+C9-CA, U+CD, U+D3-D5, U+DA, U+DC, U+E0-E3, U+E7, U+E9-EA, U+ED, U+F3-F5, U+FA, U+FC, U+2013-2014, U+2018-2019, U+201C-201D, U+2026;
+}
+
+@font-face {
+  font-family: ExtremeHazard;
+  src: url(/ptbr/fonts/ExtremeHazard-ptbr.woff2) format('woff2');
+  unicode-range: U+AA, U+B0, U+BA, U+C0-C3, U+C7, U+C9-CA, U+CD, U+D3-D5, U+DA, U+DC, U+E0-E3, U+E7, U+E9-EA, U+ED, U+F3-F5, U+FA, U+FC, U+2013-2014, U+2018-2019, U+201C-201D, U+2026;
+}

@@ -1,0 +1,10 @@
+{
+  "        'Find Recipient',\n": "        'Buscar Destinatário',\n",
+  "<div>Who do you want to send to?</div>": "<div>Para quem você quer enviar?</div>",
+  "<span>Player Search</span>": "<span>Buscar Jogador</span>",
+  "placeholder=\"Name, PID, or Address\"": "placeholder=\"Nome, PID ou Endereço\"",
+  "<span>Filter By Guild</span>": "<span>Filtrar por Guilda</span>",
+  "<option value=\"\">Any Guild</option>": "<option value=\"\">Qualquer Guilda</option>",
+  "sui-mod-disabled\" disabled>Search</button>": "sui-mod-disabled\" disabled>Buscar</button>",
+  "sui-input-text-warning\">Enter at least 3 characters, using only letters, numbers, '-' and '_'.</div>": "sui-input-text-warning\">Digite pelo menos 3 caracteres, usando apenas letras, números, '-' e '_'.</div>"
+}

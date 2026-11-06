@@ -1,0 +1,13 @@
+{
+  "options.headerBtnLabel = 'Transferring...';": "options.headerBtnLabel = 'Transferindo...';",
+  "'The transfer continues if you leave this screen.'": "'A transferência continua se você sair desta tela.'",
+  "'Confirmed on chain. Your transfer history has not caught up yet; check it again shortly.'": "'Transferência confirmada. Seu histórico ainda não foi atualizado; confira novamente em instantes.'",
+  "let html = 'Non-Player Address';": "let html = 'Endereço de Não Jogador';",
+  ": 'Name Redacted';": ": 'Nome Oculto';",
+  "MenuPage.setPageTemplateHeaderBtn('Confirm Transfer',": "MenuPage.setPageTemplateHeaderBtn('Confirmar Transferência',",
+  "sui-text-header\">Transaction Details</div>": "sui-text-header\">Dados da Transferência</div>",
+  "<div>Amount</div>": "<div>Quantidade</div>",
+  "<div>Recipient</div>": "<div>Destinatário</div>",
+  ">Cancel</a>": ">Cancelar</a>",
+  ">Transfer Now</a>": ">Transferir Agora</a>"
+}

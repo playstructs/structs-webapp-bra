@@ -1,0 +1,5 @@
+{
+  "<span class=\"sui-text-header\">Raid Log</span>": "<span class=\"sui-text-header\">Registro de Incursões</span>",
+  "MenuPage.setPageTemplateHeaderBtn('Fleet Status');": "MenuPage.setPageTemplateHeaderBtn('Status da Frota');",
+  "<span class=\"sui-text-header\">Base Log</span>": "<span class=\"sui-text-header\">Registro da Base</span>"
+}

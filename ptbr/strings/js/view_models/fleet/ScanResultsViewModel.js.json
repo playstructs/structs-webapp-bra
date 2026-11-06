@@ -1,0 +1,12 @@
+{
+  "sui-mod-warning\">On Station</span>": "sui-mod-warning\">Em Posição</span>",
+  "sui-mod-destructive\">Under Attack</span>": "sui-mod-destructive\">Sob Ataque</span>",
+  "sui-mod-default\">Fleet Away</span>": "sui-mod-default\">Em Missão</span>",
+  ">View</a>": ">Ver</a>",
+  "`<div>No results found. Please try a different search term.</div>`": "`<div>Nenhum resultado encontrado. Tente outro termo de busca.</div>`",
+  "MenuPage.setPageTemplateHeaderBtn('Scan Results',": "MenuPage.setPageTemplateHeaderBtn('Resultados da Varredura',",
+  "$keep": [
+    "PID #",
+    "Fleet"
+  ]
+}

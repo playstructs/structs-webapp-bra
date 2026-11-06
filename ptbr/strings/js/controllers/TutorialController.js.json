@@ -1,0 +1,14 @@
+{
+  "'Loading...', TUTORIAL_COPY": "'Carregando...', TUTORIAL_COPY",
+  "'Restart Tutorial?'": "'Reiniciar Treinamento?'",
+  "'Are you sure you want to restart the tutorial? Your progress will be reset.'": "'Tem certeza de que quer reiniciar o treinamento? Seu progresso será zerado.'",
+  "'Restart Tutorial',": "'Reiniciar',",
+  "'Abandon Tutorial?'": "'Abandonar Treinamento?'",
+  "'Are you sure you want to abandon the tutorial? You can revisit the tutorial later from the menu.'": "'Tem certeza de que quer abandonar o treinamento? Você pode voltar a ele depois pelo menu.'",
+  "'Abandon Tutorial',": "'Abandonar',",
+  "'CMD Ship jumping to a new planet'": "'Nave de Comando saltando para um novo planeta'",
+  "$keep": [
+    "Tutorial",
+    "Status"
+  ]
+}

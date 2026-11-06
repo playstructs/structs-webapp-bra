@@ -1,0 +1,9 @@
+{
+  "Only <strong>letters</strong>, <strong>numbers</strong>, <strong>-</strong> and <strong>_</strong> are allowed. <strong>Length</strong> must be between <strong>3</strong> and <strong>20</strong> characters.": "Somente <strong>letras</strong>, <strong>números</strong>, <strong>-</strong> e <strong>_</strong> são permitidos. O <strong>tamanho</strong> deve ser de <strong>3</strong> a <strong>20</strong> caracteres.",
+  "<div class=\"set-username-profile-created\">Profile Created</div>": "<div class=\"set-username-profile-created\">Perfil Criado</div>",
+  "`Welcome, ${this.gameState.signupRequest.username}.`": "`Boas-vindas, ${this.gameState.signupRequest.username}.`",
+  "<span>Display Name</span>": "<span>Nome de Exibição</span>",
+  "placeholder=\"Your Name\"": "placeholder=\"Seu nome\"",
+  ">Submit</button>": ">Enviar</button>",
+  "`To begin, please confirm your identity.`": "`Para começar, por favor, confirme sua identidade.`"
+}

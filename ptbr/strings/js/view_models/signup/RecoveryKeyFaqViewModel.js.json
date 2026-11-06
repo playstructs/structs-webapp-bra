@@ -1,0 +1,14 @@
+{
+  "pageHeader.pageLabel = 'About Recovery Keys';": "pageHeader.pageLabel = 'Sobre Chaves de Recuperação';",
+  ">What is a Recovery Key?</div>": ">O que é uma Chave de Recuperação?</div>",
+  "<div>Your recovery key is the 12-word secrect code that was given to you created your account.</div>": "<div>Sua Chave de Recuperação é o código secreto de 12 palavras que você recebeu ao criar sua conta.</div>",
+  ">Why do I need my Recovery Key?</div>": ">Por que preciso da minha Chave de Recuperação?</div>",
+  "<div>In the event that you lose access to your account, you can use your Recovery Key to log in.</div>": "<div>Caso perca o acesso à sua conta, você pode usar sua Chave de Recuperação para entrar.</div>",
+  ">How can I protect my Recovery Key?</div>": ">Como posso proteger minha Chave de Recuperação?</div>",
+  "<div>It is important to write down your Recovery Key and keep it in a safe place. You may also consider saving your Recovery Key to a password manager. We do not store Recovery Keys and cannot help you retrieve your Key if you lose it.</div>": "<div>É importante anotar sua Chave de Recuperação e guardá-la em um lugar seguro. Você também pode salvá-la em um gerenciador de senhas. Não armazenamos Chaves de Recuperação e não podemos ajudar você a recuperar sua Chave se a perder.</div>",
+  ">I want to log in on a new device. Do I need my recovery Key?</div>": ">Quero entrar em um novo dispositivo. Preciso da minha Chave de Recuperação?</div>",
+  "<div>No. If you currently have access to a logged-in device, you can log in a new device by using the <a": "<div>Não. Se você tem acesso a um dispositivo conectado, pode entrar em um novo dispositivo usando a opção <a",
+  ">Login From Another Device</a> option.<br>": ">Entrar por Outro Dispositivo</a>.<br>",
+  "Note: this option is only available if the logged-in device has Account Management permissions.<br>": "Observação: esta opção só está disponível se o dispositivo conectado tiver a permissão Gestão de Dispositivos.<br>",
+  "If you have no currently logged-in devices with Account Management permissions, you will need to use your Recovery Key to log in again.": "Se você não tiver nenhum dispositivo conectado com a permissão Gestão de Dispositivos, precisará usar sua Chave de Recuperação para entrar novamente."
+}

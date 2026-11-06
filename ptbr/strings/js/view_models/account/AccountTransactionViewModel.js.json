@@ -1,0 +1,12 @@
+{
+  "href=\"javascript:void(0)\">Player #${this.transaction.counterparty_player_id}</a>": "href=\"javascript:void(0)\">Jogador #${this.transaction.counterparty_player_id}</a>",
+  ">Back To Account</a>": ">Voltar à Conta</a>",
+  "? 'Recipient' : 'Sender';": "? 'Destinatário' : 'Remetente';",
+  "MenuPage.setPageTemplateHeaderBtn('Transaction Details',": "MenuPage.setPageTemplateHeaderBtn('Dados da Transferência',",
+  "            This transaction was completed successfully.\n": "            Esta transferência foi concluída com sucesso.\n",
+  "sui-text-header\">Player Details</div>": "sui-text-header\">Detalhes</div>",
+  "<div>Transaction ID</div>": "<div>ID da Transferência</div>",
+  "<div>Date</div>": "<div>Data</div>",
+  "<div>Amount</div>": "<div>Quantidade</div>",
+  "'Alpha Matter',": "'Matéria Alfa',"
+}

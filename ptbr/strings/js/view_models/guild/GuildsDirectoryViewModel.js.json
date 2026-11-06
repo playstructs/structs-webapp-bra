@@ -1,0 +1,9 @@
+{
+  "alt=\"Guild ${guildSearchResultDTO.name}'s logo\"": "alt=\"Logo da guilda ${guildSearchResultDTO.name}\"",
+  ": `Guild #${guildSearchResultDTO.guild_id}`;": ": `Guilda #${guildSearchResultDTO.guild_id}`;",
+  "'Number of members in the guild',": "'Número de membros da guilda',",
+  "'Alpha infused with the guild',": "'Alfa infundido na guilda',",
+  ">View</a>": ">Ver</a>",
+  "`<div>Guild has no members yet.</div>`": "`<div>Ainda não há guildas.</div>`",
+  "MenuPage.setPageTemplateHeaderBtn(\"Guild's Directory\",": "MenuPage.setPageTemplateHeaderBtn(\"Diretório de Guildas\","
+}

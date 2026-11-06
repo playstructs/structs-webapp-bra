@@ -1,0 +1,10 @@
+{
+  "          Address ${playerSearchResultDTO.address}\n": "          Endereço ${playerSearchResultDTO.address}\n",
+  ": 'Name Redacted'": ": 'Nome Oculto'",
+  ">View</a>": ">Ver</a>",
+  "`<div>Guild has no members yet.</div>`": "`<div>A guilda ainda não tem membros.</div>`",
+  "MenuPage.setPageTemplateHeaderBtn('Member Roster',": "MenuPage.setPageTemplateHeaderBtn('Lista de Membros',",
+  "$keep": [
+    "PID #"
+  ]
+}

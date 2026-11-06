@@ -1,0 +1,6 @@
+{
+  "MenuPage.setPageTemplateHeaderBtn('Activate New Device');": "MenuPage.setPageTemplateHeaderBtn('Ativar Novo Dispositivo');",
+  "alt=\"3 dots loading animation\"": "alt=\"animação de carregamento com 3 pontos\"",
+  "Activating device<br>": "Ativando dispositivo<br>",
+  "<span class=\"sui-text-warning\">Do not close this screen.</span>": "<span class=\"sui-text-warning\">Não feche esta tela.</span>"
+}

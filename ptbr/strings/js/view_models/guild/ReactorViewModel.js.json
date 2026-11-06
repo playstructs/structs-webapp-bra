@@ -1,0 +1,23 @@
+{
+  "MenuPage.setPageTemplateHeaderBtn('Guild Reactor',": "MenuPage.setPageTemplateHeaderBtn('Reator da Guilda',",
+  "alt=\"alpha reactor\"": "alt=\"reator alfa\"",
+  "sui-text-secondary\">ALPHA MATTER</div>": "sui-text-secondary\">MATÉRIA ALFA</div>",
+  "<div class=\"sui-text-hint\">Alpha Infused</div>": "<div class=\"sui-text-hint\">Alfa Infundido</div>",
+  "'Alpha infused with the guild',": "'Alfa infundido na guilda',",
+  "                      Cooldown\n": "                      Tempo de espera\n",
+  "data-sui-tooltip=\"When removed from a Reactor, Alpha Matter must cool down before use.\"": "data-sui-tooltip=\"Ao ser retirada de um Reator, a Matéria Alfa precisa passar por um tempo de espera antes do uso.\"",
+  "'Alpha removed from the reactor that must cooldown before reuse',": "'Alfa retirado do reator que precisa passar por um tempo de espera antes de ser reutilizado',",
+  "sui-text-secondary\">ENERGY</div>": "sui-text-secondary\">ENERGIA</div>",
+  "<div class=\"sui-text-hint\">Total Supply</div>": "<div class=\"sui-text-hint\">Fornecimento Total</div>",
+  "'Expected supply of power',": "'Fornecimento esperado de potência',",
+  ">Manage Alpha</a>": ">Gerenciar Alfa</a>",
+  "sui-text-header\">Reactor Details</div>": "sui-text-header\">Dados do Reator</div>",
+  "                  Guild Minimum\n": "                  Mínimo da Guilda\n",
+  "data-sui-tooltip=\"The minimum Alpha Matter that must be infused for Guild Membership.\"": "data-sui-tooltip=\"A Matéria Alfa mínima que precisa ser infundida para ser Membro da Guilda.\"",
+  "'Minimum alpha required to join guild',": "'Alfa mínimo para entrar na guilda',",
+  "                  Reactor Efficiency\n": "                  Eficiência do Reator\n",
+  "data-sui-tooltip=\"The amount of Energy supplied for each additional Alpha Matter infused.\"": "data-sui-tooltip=\"A quantidade de Energia fornecida para cada Matéria Alfa adicional infundida.\"",
+  "                  Commission\n": "                  Comissão\n",
+  "data-sui-tooltip=\"The percentage of Energy taken by the guild.\"": "data-sui-tooltip=\"A porcentagem de Energia retida pela guilda.\"",
+  "'The guild\\'s cut',": "'A parte da guilda',"
+}

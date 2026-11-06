@@ -1,0 +1,10 @@
+{
+  "'Activation Code is invalid or has expired.'": "'Código de ativação inválido ou expirado.'",
+  "'Activate Device'": "'Ativar Dispositivo'",
+  "<div>To receive an activation code, go to <span class=\"sui-text-secondary\">Account > Devices</span> on any logged in device.</div>": "<div>Para receber um código de ativação, acesse <span class=\"sui-text-secondary\">Conta > Dispositivos</span> em qualquer dispositivo conectado.</div>",
+  "<span>Activation Code</span>": "<span>Código de Ativação</span>",
+  "placeholder=\"Enter Code\"": "placeholder=\"Digite o código\"",
+  ">Submit</button>": ">Enviar</button>",
+  "<div>Not logged in anywhere else?</div>": "<div>Não tem outro dispositivo conectado?</div>",
+  "Log In With Recovery Key": "Entrar com Chave de Recuperação"
+}

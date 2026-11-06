@@ -1,0 +1,7 @@
+{
+  "pageHeader.pageLabel = 'Confirm Recovery Key';": "pageHeader.pageLabel = 'Confirmar Chave de Recuperação';",
+  "<div>To confirm your Recovery Key, enter each word, in order, separated by spaces.</div>": "<div>Para confirmar sua Chave de Recuperação, digite cada palavra, na ordem, separadas por espaços.</div>",
+  "<span>Confirm Recovery Key</span>": "<span>Confirmar Chave de Recuperação</span>",
+  "placeholder=\"word word word ...\"": "placeholder=\"palavra palavra palavra ...\"",
+  ">Next</button>": ">Avançar</button>"
+}

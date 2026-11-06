@@ -1,0 +1,12 @@
+{
+  "'Unknown OS'": "'SO desconhecido'",
+  "\"Chrome Based\"": "\"baseado em Chrome\"",
+  "'Unrecognized'": "'não reconhecido'",
+  "$keep": [
+    "Edge",
+    "Firefox",
+    "Opera",
+    "Safari",
+    "Samsung"
+  ]
+}

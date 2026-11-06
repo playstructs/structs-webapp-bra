@@ -1,0 +1,10 @@
+{
+  "MenuPage.setPageTemplateHeaderBtn('Guild Status');": "MenuPage.setPageTemplateHeaderBtn('Status da Guilda');",
+  "<span class=\"sui-text-header\">Alpha Reactor</span>": "<span class=\"sui-text-header\">Reator Alfa</span>",
+  "\">${alphaInfused} Alpha Infused</div>": "\">Alfa Infundido: ${alphaInfused}</div>",
+  "<span class=\"sui-text-header\">Guild Profile</span>": "<span class=\"sui-text-header\">Perfil da Guilda</span>",
+  "<span class=\"sui-text-header\">Member Roster</span>": "<span class=\"sui-text-header\">Lista de Membros</span>",
+  "\">${memberCount} Members</div>": "\">Membros: ${memberCount}</div>",
+  "<span class=\"sui-text-header\">Guilds Directory</span>": "<span class=\"sui-text-header\">Diretório de Guildas</span>",
+  "\">${guildCount} Guilds</div>": "\">Guildas: ${guildCount}</div>"
+}

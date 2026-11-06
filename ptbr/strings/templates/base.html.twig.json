@@ -1,0 +1,10 @@
+{
+  "<html class=\"no-js\" lang=\"en-us\">": "<html class=\"no-js\" lang=\"pt-BR\">",
+  "{% block title %}Structs{% endblock %}": "{% block title %}estrut.net{% endblock %}",
+  "$keep": [
+    "{% block title %}estrut.net{% endblock %}",
+    "{% block body %}{% endblock %}",
+    "{% block javascripts %}",
+    "{% endblock %}"
+  ]
+}

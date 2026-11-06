@@ -1,0 +1,10 @@
+{
+  "view.headerBtnLabel = 'Manage Device';": "view.headerBtnLabel = 'Gerenciar Dispositivo';",
+  "view.messageHeaderText = 'IMPORTANT';": "view.messageHeaderText = 'IMPORTANTE';",
+  "The following assets are associated with this device. If this device is logged out, these assets will be swept to your": "Os recursos a seguir estão associados a este dispositivo. Se você sair neste dispositivo, eles serão transferidos para sua",
+  "data-sui-tooltip=\"The Player Account holds your funds independently of any signing device.\"": "data-sui-tooltip=\"A Conta de Jogador guarda seus recursos independentemente de qualquer dispositivo.\"",
+  ">Player Account.</a>": ">Conta de Jogador.</a>",
+  "data-sui-tooltip=\"Alpha Matter\"": "data-sui-tooltip=\"Matéria Alfa\"",
+  "view.confirmBtn1Label = 'Stay Logged In';": "view.confirmBtn1Label = 'Manter Sessão';",
+  "view.confirmBtn2Label = 'Log Out Now';": "view.confirmBtn2Label = 'Sair Agora';"
+}

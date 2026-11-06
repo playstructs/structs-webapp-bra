@@ -1,0 +1,9 @@
+{
+  "view.headerBtnLabel = 'Manage Device';": "view.headerBtnLabel = 'Gerenciar Dispositivo';",
+  "view.messageHeaderText = 'IMPORTANT';": "view.messageHeaderText = 'IMPORTANTE';",
+  "This is the only device with Manage Device permissions active. If these permissions are removed, you will be unable to activate new devices without using your": "Este é o único dispositivo com a permissão Gestão de Dispositivos ativa. Se essa permissão for removida, você não poderá ativar novos dispositivos sem usar sua",
+  "data-sui-tooltip=\"The Primary Account Address is the master address associated with your account, rather than a specific device.\"": "data-sui-tooltip=\"O Endereço Principal da Conta é o endereço mestre associado à sua conta, e não a um dispositivo específico.\"",
+  ">Recovery Key.</a>": ">Chave de Recuperação.</a>",
+  "view.confirmBtn1Label = 'Save Changes';": "view.confirmBtn1Label = 'Salvar Alterações';",
+  "view.confirmBtn2Label = 'Cancel';": "view.confirmBtn2Label = 'Cancelar';"
+}

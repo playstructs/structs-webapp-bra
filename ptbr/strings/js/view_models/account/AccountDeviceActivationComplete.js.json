@@ -1,0 +1,6 @@
+{
+  "MenuPage.setPageTemplateHeaderBtn('Activate New Device');": "MenuPage.setPageTemplateHeaderBtn('Ativar Novo Dispositivo');",
+  "            Device Approved\n": "            Dispositivo Aprovado\n",
+  "<div>The new device has been activated.</div>": "<div>O novo dispositivo foi ativado.</div>",
+  "sui-mod-primary\">Return to Account</button>": "sui-mod-primary\">Voltar à Conta</button>"
+}

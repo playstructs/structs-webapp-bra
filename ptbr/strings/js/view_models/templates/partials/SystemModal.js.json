@@ -1,0 +1,4 @@
+{
+  "this.cancelBtnLabel = 'Cancel';": "this.cancelBtnLabel = 'Cancelar';",
+  "this.confirmBtnLabel = 'Confirm';": "this.confirmBtnLabel = 'Confirmar';"
+}

@@ -1,0 +1,5 @@
+{
+  ">Victory!</strong> The enemy\\'s planetary shield has been defeated.'": ">Vitória!</strong> O Escudo Planetário inimigo foi derrotado.'",
+  "`You recovered <strong class=\"sui-text-primary\">${this.alphaOreRecovered} Alpha Ore</strong> from the enemy base.`": "`Você recuperou <strong class=\"sui-text-primary\">${this.alphaOreRecovered} de Minério Alfa</strong> da base inimiga.`",
+  "'Your fleet will now return to base.'": "'Sua frota agora retornará à base.'"
+}

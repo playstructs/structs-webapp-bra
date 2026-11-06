@@ -1,0 +1,5 @@
+{
+  "MenuPage.setPageTemplateHeaderBtn('Account',": "MenuPage.setPageTemplateHeaderBtn('Conta',",
+  "<span class=\"sui-text-header\">Send Alpha</span>": "<span class=\"sui-text-header\">Enviar Alfa</span>",
+  "<span class=\"sui-text-header\">Transaction History</span>": "<span class=\"sui-text-header\">Histórico</span>"
+}

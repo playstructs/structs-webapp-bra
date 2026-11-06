@@ -1,0 +1,3 @@
+{
+  "`<strong class=\"sui-text-destructive\">Defeat!</strong> Your Planetary Shield was depleted, allowing the enemy to steal <strong class=\"sui-text-destructive\">${this.alphaOreLost} Alpha Ore</strong>.`": "`<strong class=\"sui-text-destructive\">Derrota!</strong> Seu Escudo Planetário se esgotou, e o inimigo roubou <strong class=\"sui-text-destructive\">${this.alphaOreLost} de Minério Alfa</strong>.`"
+}

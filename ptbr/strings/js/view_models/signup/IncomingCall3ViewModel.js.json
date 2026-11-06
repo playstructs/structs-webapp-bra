@@ -1,0 +1,9 @@
+{
+  "<strong>SN.CORP:</strong> Greetings, SN.CORPORATION employee. I am your designated Synthetic Resources Officer.": "<strong>SN.CORP:</strong> Saudações, integrante da SN.CORPORATION! Sou o Oficial de Recursos Sintéticos designado para o seu atendimento.",
+  "I have been tasked with assisting you as you complete your <a": "Tenho a incumbência de auxiliar você na conclusão da sua <a",
+  "data-sui-tooltip=\"Failure to complete Employee Orientation may result in serious injury or death.\"": "data-sui-tooltip=\"A não conclusão da Integração de Funcionários pode resultar em ferimentos graves ou morte.\"",
+  "Employee Orientation.</a>`": "Integração de Funcionários.</a>`",
+  "$keep": [
+    "SN.CORP:"
+  ]
+}

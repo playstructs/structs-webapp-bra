@@ -1,0 +1,11 @@
+{
+  "          Address ${playerSearchResultDTO.address}\n": "          Endereço ${playerSearchResultDTO.address}\n",
+  ": 'Name Redacted'": ": 'Nome Oculto'",
+  ">View</a>": ">Ver</a>",
+  "<div>No results found. Please try a different search term.</div>": "<div>Nenhum resultado encontrado. Tente outro termo de busca.</div>",
+  "<div>Showing the first 25 results. Try narrowing your search for better results.</div>": "<div>Mostrando os 25 primeiros resultados. Tente restringir a busca para obter resultados melhores.</div>",
+  "MenuPage.setPageTemplateHeaderBtn('Search Results',": "MenuPage.setPageTemplateHeaderBtn('Resultados da Busca',",
+  "$keep": [
+    "PID #"
+  ]
+}

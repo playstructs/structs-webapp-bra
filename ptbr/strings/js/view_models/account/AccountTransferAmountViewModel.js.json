@@ -1,0 +1,8 @@
+{
+  "MenuPage.setPageTemplateHeaderBtn('Amount',": "MenuPage.setPageTemplateHeaderBtn('Quantidade',",
+  "<div>How much Alpha Matter do you want to send?</div>": "<div>Quanta Matéria Alfa você quer enviar?</div>",
+  "sui-mod-disabled\" disabled>Next</button>": "sui-mod-disabled\" disabled>Avançar</button>",
+  "$keep": [
+    "[AccountTransferAmount] funds unavailable:"
+  ]
+}

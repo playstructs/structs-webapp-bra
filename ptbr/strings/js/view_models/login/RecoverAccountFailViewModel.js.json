@@ -1,0 +1,7 @@
+{
+  "'Recover Account'": "'Recuperar Conta'",
+  "Invalid Recovery Key": "Chave de Recuperação Inválida",
+  "<div>The Recovery Key provided did not match any known account. Please ensure each word is spelled correctly and is entered in the correct order.</div>": "<div>A Chave de Recuperação informada não corresponde a nenhuma conta conhecida. Verifique se cada palavra está escrita corretamente e na ordem certa.</div>",
+  ">Try Again</button>": ">Tentar Novamente</button>",
+  "Log In From Another Device": "Entrar por Outro Dispositivo"
+}

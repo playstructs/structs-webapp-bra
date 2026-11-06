@@ -1,0 +1,10 @@
+{
+  "'Skip Tutorial?'": "'Pular Treinamento?'",
+  "'Are you sure you want to skip the tutorial? You can revisit the tutorial later from the menu.'": "'Tem certeza de que quer pular o treinamento? Você pode voltar a ele depois pelo menu.'",
+  "'Skip Tutorial',": "'Pular',",
+  "menuWaitingOptions.headerBtnLabel = 'Logout';": "menuWaitingOptions.headerBtnLabel = 'Sair';",
+  "menuWaitingOptions.waitingMessage = 'Logging out.';": "menuWaitingOptions.waitingMessage = 'Saindo.';",
+  "$keep": [
+    "Auth"
+  ]
+}

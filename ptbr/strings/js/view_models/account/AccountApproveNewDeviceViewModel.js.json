@@ -1,0 +1,13 @@
+{
+  "MenuPage.setPageTemplateHeaderBtn('Activate New Device');": "MenuPage.setPageTemplateHeaderBtn('Ativar Novo Dispositivo');",
+  "<div>The following device is requesting access to your account:</div>": "<div>O dispositivo a seguir está solicitando acesso à sua conta:</div>",
+  "sui-text-primary\">New Device</div>": "sui-text-primary\">Novo Dispositivo</div>",
+  "<div>${userAgent.getBrowser()} Browser</div>": "<div>Navegador ${userAgent.getBrowser()}</div>",
+  "<div class=\"sui-text-header\">Device Seal</div>": "<div class=\"sui-text-header\">Selo do Dispositivo</div>",
+  "sui-text-hint\">Ensure this image matches the one shown on the device to be activated.</div>": "sui-text-hint\">Confirme se esta imagem é igual à exibida no dispositivo a ser ativado.</div>",
+  "<div>Set permissions for the new device:</div>": "<div>Defina as permissões do novo dispositivo:</div>",
+  "\">Manage Devices</label>": "\">Gestão de Dispositivos</label>",
+  "\">Transfer Assets</label>": "\">Transferir Recursos</label>",
+  ">Approve Device</a>": ">Aprovar Dispositivo</a>",
+  ">Deny</a>": ">Negar</a>"
+}

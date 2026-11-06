@@ -1,0 +1,6 @@
+{
+  "'Vulnerable'": "'Vulnerável'",
+  "'Secure'": "'Seguro'",
+  "?? 'N/A';": "?? 'N/D';",
+  "alt=\"${status}\"": "alt=\"${__ptbr.t(status)}\""
+}

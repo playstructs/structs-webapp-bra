@@ -1,0 +1,8 @@
+{
+  "\"This device doesn't have permission to change the display name. Sign in on a device with management permissions to update it.\"": "\"Este dispositivo não tem permissão para alterar o nome de usuário. Entre em um dispositivo com permissão de Gestão de Dispositivos para atualizá-lo.\"",
+  "'Change Display Name',": "'Alterar nome de usuário',",
+  "\"Name must be 3\\u201320 characters and only include letters, numbers, '-' and '_'.\"": "\"O nome deve ter 3\\u201320 caracteres e usar apenas letras, números, '-' e '_'.\"",
+  "<span>Display Name</span>": "<span>Nome de usuário</span>",
+  "placeholder=\"Type your new display name\"": "placeholder=\"Digite seu novo nome de usuário\"",
+  "sui-mod-disabled\" disabled>Submit</button>": "sui-mod-disabled\" disabled>Enviar</button>"
+}

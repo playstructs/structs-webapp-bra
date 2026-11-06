@@ -1,0 +1,15 @@
+{
+  "class=\"sui-screen-info\">Executing</div>": "class=\"sui-screen-info\">Em execução</div>",
+  "const header = ambitOrTileLabel.toUpperCase();": "const header = __ptbr.t(ambitOrTileLabel.toUpperCase());",
+  "title=\"Deploy\"": "title=\"Implantar\"",
+  "alt=\"panel switch\"": "alt=\"Interruptor do painel\"",
+  "prompt: 'Select Target',": "prompt: 'Selecionar Alvo',",
+  "prompt: 'Select Tile',": "prompt: 'Selecionar Setor',",
+  "prompt: 'Select Struct',": "prompt: 'Selecionar Estrutura',",
+  "|| 'Primary Weapon'}": "|| 'Arma Primária'}",
+  "|| 'Secondary Weapon'}": "|| 'Arma Secundária'}",
+  "title=\"Stealth Mode\"": "title=\"Modo Furtivo\"",
+  "title=\"Move\"": "title=\"Mover\"",
+  "title=\"Defend\"": "title=\"Defender\"",
+  "title=\"Consume Alpha\"": "title=\"Consumir Alfa\""
+}
