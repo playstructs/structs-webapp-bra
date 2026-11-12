@@ -59,6 +59,10 @@ module.exports = {
     [".toLocaleDateString(\n      'default',", ".toLocaleDateString(\n      'pt-BR',"],
     [".toLocaleTimeString(\n      'default',", ".toLocaleTimeString(\n      'pt-BR',"],
   ],
+  // Exact figures are grouped as Brazil groups them: 1.075, not 1,075.
+  'js/util/NumberFormatter.js': [
+    [".toLocaleString('en-US')", ".toLocaleString('pt-BR')"],
+  ],
   'js/view_models/account/AccountDevicesViewModel.js': [
     [".toLocaleDateString(\n      'default',", ".toLocaleDateString(\n      'pt-BR',"],
   ],

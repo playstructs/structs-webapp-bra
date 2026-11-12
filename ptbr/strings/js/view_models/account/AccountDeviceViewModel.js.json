@@ -13,5 +13,9 @@
   "\">\n                Transfer Assets\n": "\">\n                Transferir Recursos\n",
   "data-sui-tooltip=\"The ability to send Alpha to other accounts.\"": "data-sui-tooltip=\"Permite enviar Alfa para outras contas.\"",
   ">Cancel</a>": ">Cancelar</a>",
-  ">Save</a>": ">Salvar</a>"
+  ">Save</a>": ">Salvar</a>",
+  "This is the only device that can manage devices, so it must keep this permission.": "Este é o único dispositivo que pode gerenciar dispositivos, por isso precisa manter esta permissão.",
+  "Give Manage Devices to another device first.": "Conceda Gestão de Dispositivos a outro dispositivo primeiro.",
+  "The primary device always keeps full access, so its permissions cannot be changed.": "O dispositivo principal sempre mantém acesso total, então suas permissões não podem ser alteradas.",
+  "<div class=\"sui-text-warning\">Your changes were not saved. Please try again.</div>": "<div class=\"sui-text-warning\">Suas alterações não foram salvas. Tente novamente.</div>"
 }

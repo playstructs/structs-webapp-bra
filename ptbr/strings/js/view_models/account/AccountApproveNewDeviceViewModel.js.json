@@ -9,5 +9,6 @@
   "\">Manage Devices</label>": "\">Gestão de Dispositivos</label>",
   "\">Transfer Assets</label>": "\">Transferir Recursos</label>",
   ">Approve Device</a>": ">Aprovar Dispositivo</a>",
-  ">Deny</a>": ">Negar</a>"
+  ">Deny</a>": ">Negar</a>",
+  "This device can only grant permissions it has itself.": "Este dispositivo só pode conceder as permissões que ele mesmo tem."
 }

@@ -1,6 +1,7 @@
 {
   "MenuPage.setPageTemplateHeaderBtn('Activate New Device');": "MenuPage.setPageTemplateHeaderBtn('Ativar Novo Dispositivo');",
-  "            Activation Cancelled\n": "            Ativação Cancelada\n",
-  "<div>This device has not been activated.</div>": "<div>Este dispositivo não foi ativado.</div>",
-  "sui-mod-primary\">Return to Account</button>": "sui-mod-primary\">Voltar à Conta</button>"
+  "sui-mod-primary\">Return to Account</button>": "sui-mod-primary\">Voltar à Conta</button>",
+  "? 'Activation Failed' : 'Activation Cancelled'}": "? 'Falha na Ativação' : 'Ativação Cancelada'}",
+  "? 'The approval did not go through, so the new device has not been activated. Nothing on your account has changed.'": "? 'A aprovação não foi concluída, então o novo dispositivo não foi ativado. Nada mudou na sua conta.'",
+  ": 'The new device has not been activated.'}": ": 'O novo dispositivo não foi ativado.'}"
 }

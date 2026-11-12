@@ -34,8 +34,6 @@
   "'Deploy'": "'Implantar'",
   "`Choose a Struct to deploy.`": "`Escolha uma Estrutura para implantar.`",
   "'Energy Supply'": "'Fornecimento de Energia'",
-  "`Insufficient Energy. Deactivate Structs to reduce Energy draw.`": "`Energia insuficiente. Desative Estruturas para reduzir o consumo de Energia.`",
-  "`Energy Supply normal.`": "`Fornecimento de Energia normal.`",
   "'Planetary Beacon'": "'Sinalizador Planetário'",
   "'Planetary Structs can be deployed to this location.'": "'Estruturas Planetárias podem ser implantadas neste local.'",
   "'Blocked'": "'Bloqueado'",
@@ -60,6 +58,11 @@
   "`Ore cannot be mined or refined while enemy forces are present.`": "`Não é possível minerar ou refinar Minério com forças inimigas presentes.`",
   "'Defend'": "'Defender'",
   "`Blocks incoming damage and counter-attacks on behalf of another Struct.`": "`Bloqueia dano recebido e contra-ataques no lugar de outra Estrutura.`",
+  "`Insufficient Energy. Deactivate Structs to reduce Energy draw.${this.energySupplyDetailHTML()}`": "`Energia insuficiente. Desative Estruturas para reduzir o consumo de Energia.${this.energySupplyDetailHTML()}`",
+  "`Energy Supply normal.${this.energySupplyDetailHTML()}`": "`Fornecimento de Energia normal.${this.energySupplyDetailHTML()}`",
+  "? `${this.numberFormatter.formatGrouped(headroom)} available.`": "? `${this.numberFormatter.formatGrouped(headroom)} disponíveis.`",
+  ": `${this.numberFormatter.formatGrouped(-headroom)} over.`;": ": `${this.numberFormatter.formatGrouped(-headroom)} acima da capacidade.`;",
+  "return `<br>Using ${this.numberFormatter.formatGrouped(load)} of ${this.numberFormatter.formatGrouped(capacity)} Energy. ${balance}`;": "return `<br>Consumo: ${this.numberFormatter.formatGrouped(load)} de ${this.numberFormatter.formatGrouped(capacity)} de Energia. ${balance}`;",
   "$keep": [
     "kW"
   ]

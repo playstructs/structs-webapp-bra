@@ -154,8 +154,10 @@ function strings(code) {
       } else {
         // A sentence with values in it reads as prose even between the ${…}.
         const sentence = node.expressions.length > 0 && /[A-Za-z]{2,}\s+[A-Za-z]{2,}/.test(whole) && /[A-Z]/.test(whole);
+        // A word that ends a sentence after a value: `${n} available.`
+        const ending = value => node.expressions.length > 0 && /^\s+[a-z]+(\s[a-z]+)*[.!?]$/.test(value);
         whole.split('\u0000')
-          .filter(value => isProse(value) || (sentence && LATIN.test(value)))
+          .filter(value => isProse(value) || (sentence && LATIN.test(value)) || ending(value))
           .map(clean)
           .filter(text => LATIN.test(text))
           .forEach(text => found.push({line: lineOf(text), text}));

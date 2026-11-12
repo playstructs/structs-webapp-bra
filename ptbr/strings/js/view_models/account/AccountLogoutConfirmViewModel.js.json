@@ -1,0 +1,10 @@
+{
+  "view.headerBtnLabel = 'Log Out';": "view.headerBtnLabel = 'Sair';",
+  "view.messageHeaderText = 'Log out of this device?';": "view.messageHeaderText = 'Sair deste dispositivo?';",
+  "This device's key will be removed from this browser. To play here again you will need your": "A chave deste dispositivo será removida deste navegador. Para jogar aqui de novo, você precisará da sua",
+  "data-sui-tooltip=\"The words you saved when you created your account.\"": "data-sui-tooltip=\"As palavras que você salvou ao criar sua conta.\"",
+  ">Recovery Key</a>": ">Chave de Recuperação</a>",
+  "or approval from another device.": "ou da aprovação de outro dispositivo.",
+  "view.confirmBtn1Label = 'Stay Logged In';": "view.confirmBtn1Label = 'Manter Sessão';",
+  "view.confirmBtn2Label = 'Log Out';": "view.confirmBtn2Label = 'Sair';"
+}

@@ -1,0 +1,6 @@
+{
+  "headerBtnLabel: fromAccount ? 'Log Out' : 'Manage Device',": "headerBtnLabel: fromAccount ? 'Sair' : 'Gerenciar Dispositivo',",
+  "stayLabel: isThisDevice ? 'Stay Logged In' : 'Keep Device',": "stayLabel: isThisDevice ? 'Manter Sessão' : 'Manter Dispositivo',",
+  "logoutLabel: isThisDevice ? 'Log Out Now' : 'Log Out Device',": "logoutLabel: isThisDevice ? 'Sair Agora' : 'Desconectar Dispositivo',",
+  "ifLoggedOut: isThisDevice ? 'If you log out' : 'If it is logged out',": "ifLoggedOut: isThisDevice ? 'Se você sair' : 'Se ele for desconectado',"
+}
