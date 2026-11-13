@@ -3,5 +3,8 @@
   "<div>To confirm your Recovery Key, enter each word, in order, separated by spaces.</div>": "<div>Para confirmar sua Chave de Recuperação, digite cada palavra, na ordem, separadas por espaços.</div>",
   "<span>Confirm Recovery Key</span>": "<span>Confirmar Chave de Recuperação</span>",
   "placeholder=\"word word word ...\"": "placeholder=\"palavra palavra palavra ...\"",
-  ">Next</button>": ">Avançar</button>"
+  ">Next</button>": ">Avançar</button>",
+  "submitBtn.textContent = 'Signing Up...';": "submitBtn.textContent = 'Cadastrando...';",
+  "submitBtn.textContent = 'Try Again';": "submitBtn.textContent = 'Tentar Novamente';",
+  "We couldn't complete your signup. The guild may be temporarily unavailable. Please try again in a moment.": "Não foi possível concluir seu cadastro. A guilda pode estar temporariamente indisponível. Tente novamente em instantes."
 }

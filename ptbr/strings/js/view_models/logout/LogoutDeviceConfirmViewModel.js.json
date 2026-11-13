@@ -1,0 +1,9 @@
+{
+  "data-sui-tooltip=\"The words you saved when you created your account.\"": "data-sui-tooltip=\"As palavras que você salvou ao criar sua conta.\"",
+  ">Recovery Key</a>`;": ">Chave de Recuperação</a>`;",
+  "view.messageHeaderText = 'Log out of this device?';": "view.messageHeaderText = 'Sair deste dispositivo?';",
+  "This device's key will be removed from this browser. To play here again you will need your": "A chave deste dispositivo será removida deste navegador. Para jogar aqui de novo, você precisará da sua",
+  "view.messageHeaderText = 'Log out this device?';": "view.messageHeaderText = 'Desconectar este dispositivo?';",
+  "It will lose access to your account. To play on it again you will need your": "Ele perderá o acesso à sua conta. Para jogar nele de novo, você precisará da sua",
+  "or approval from another device.": "ou da aprovação de outro dispositivo."
+}

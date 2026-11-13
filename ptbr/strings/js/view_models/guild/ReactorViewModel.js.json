@@ -1,5 +1,4 @@
 {
-  "MenuPage.setPageTemplateHeaderBtn('Guild Reactor',": "MenuPage.setPageTemplateHeaderBtn('Reator da Guilda',",
   "alt=\"alpha reactor\"": "alt=\"reator alfa\"",
   "sui-text-secondary\">ALPHA MATTER</div>": "sui-text-secondary\">MATÉRIA ALFA</div>",
   "<div class=\"sui-text-hint\">Alpha Infused</div>": "<div class=\"sui-text-hint\">Alfa Infundido</div>",
@@ -19,5 +18,6 @@
   "data-sui-tooltip=\"The amount of Energy supplied for each additional Alpha Matter infused.\"": "data-sui-tooltip=\"A quantidade de Energia fornecida para cada Matéria Alfa adicional infundida.\"",
   "                  Commission\n": "                  Comissão\n",
   "data-sui-tooltip=\"The percentage of Energy taken by the guild.\"": "data-sui-tooltip=\"A porcentagem de Energia retida pela guilda.\"",
-  "'The guild\\'s cut',": "'A parte da guilda',"
+  "'The guild\\'s cut',": "'A parte da guilda',",
+  "MenuPage.setPageTemplateHeaderBtn('Alpha Reactor',": "MenuPage.setPageTemplateHeaderBtn('Reator Alfa',"
 }

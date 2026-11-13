@@ -5,5 +5,5 @@
   "'Alpha infused with the guild',": "'Alfa infundido na guilda',",
   ">View</a>": ">Ver</a>",
   "`<div>Guild has no members yet.</div>`": "`<div>Ainda não há guildas.</div>`",
-  "MenuPage.setPageTemplateHeaderBtn(\"Guild's Directory\",": "MenuPage.setPageTemplateHeaderBtn(\"Diretório de Guildas\","
+  "MenuPage.setPageTemplateHeaderBtn('Guilds Directory',": "MenuPage.setPageTemplateHeaderBtn('Diretório de Guildas',"
 }

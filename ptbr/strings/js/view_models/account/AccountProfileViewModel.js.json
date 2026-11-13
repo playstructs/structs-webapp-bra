@@ -1,6 +1,5 @@
 {
   "MenuPage.setPageTemplateHeaderBtn('Profile',": "MenuPage.setPageTemplateHeaderBtn('Perfil',",
-  "MenuPage.setPageTemplateHeaderBtn('Guild Profile',": "MenuPage.setPageTemplateHeaderBtn('Perfil do Jogador',",
   "alt=\"3 dots loading animation\"": "alt=\"animação de carregamento com 3 pontos\"",
   "sui-text-header\">Player Details</div>": "sui-text-header\">Dados do Jogador</div>",
   "<div>Guild</div>": "<div>Guilda</div>",
@@ -24,5 +23,6 @@
   "<div>Ore Stolen</div>": "<div>Minério Roubado</div>",
   "'Ore Stolen',": "'Minério Roubado',",
   "<div>Ore Lost</div>": "<div>Minério Perdido</div>",
-  "'Ore Lost',": "'Minério Perdido',"
+  "'Ore Lost',": "'Minério Perdido',",
+  "MenuPage.setPageTemplateHeaderBtn('Player Profile',": "MenuPage.setPageTemplateHeaderBtn('Perfil do Jogador',"
 }
