@@ -1,0 +1,6 @@
+{
+  "return RaidTarget.isRaidable(target) ? 'Raid' : 'View';": "return RaidTarget.isRaidable(target) ? 'Atacar' : 'Ver';",
+  "sui-mod-destructive\">Under Attack</span>": "sui-mod-destructive\">Sob Ataque</span>",
+  "sui-mod-default\">Fleet Away</span>": "sui-mod-default\">Em Missão</span>",
+  "sui-mod-warning\">On Station</span>": "sui-mod-warning\">Em Posição</span>"
+}

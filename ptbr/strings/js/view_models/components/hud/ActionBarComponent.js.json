@@ -4,7 +4,7 @@
   "title=\"Deploy\"": "title=\"Implantar\"",
   "alt=\"panel switch\"": "alt=\"Interruptor do painel\"",
   "prompt: 'Select Target',": "prompt: 'Selecionar Alvo',",
-  "prompt: 'Select Tile',": "prompt: 'Selecionar Setor',",
+  "prompt: 'Select Tile',": "prompt: 'Selecionar Quadrante',",
   "prompt: 'Select Struct',": "prompt: 'Selecionar Estrutura',",
   "|| 'Primary Weapon'}": "|| 'Arma Primária'}",
   "|| 'Secondary Weapon'}": "|| 'Arma Secundária'}",

@@ -28,6 +28,9 @@ is in `runtime/terms.json`; this page is for everything else and agrees with it.
   tabs, badges and stat labels.
 - Counts: exact replacement can't choose a singular or a plural, so write a
   label and a value (`Membros: ${memberCount}`).
+- Lists join with `e` and no comma before it: `A, B e C`.
+- Decimals take a comma and thousands a dot: `6,3k`, `1.075`.
+- Time left keeps webapp's letters, which Portuguese shares: `4D 23H 16M`.
 - Numbers, units and ids stay as they are: `W`, `kW`, `g`, `PID`, `#`, `1-42`.
 - Characters: pt-BR letters and `— – … “ ” ‘ ’ º ª °` are drawn for webapp's
   pixel fonts (`art/fonts.py`). Anything else falls back to a system font.
@@ -61,7 +64,7 @@ is in `runtime/terms.json`; this page is for everything else and agrees with it.
 | Target | Alvo |
 | Battleground | Campo de Batalha |
 | Ambit: Space / Air / Land / Water | Espaço / Ar / Terra / Água |
-| Tile / Slot | Setor / Slot |
+| Tile (a map square) / Slot | Quadrante / Slot |
 | Deploy | Implantar, Implantação |
 | Build | Construir, Construção |
 | Mine / Mining | Minerar / Mineração |
@@ -133,6 +136,19 @@ is in `runtime/terms.json`; this page is for everything else and agrees with it.
 | Galactic Codex | Códice Galáctico |
 | Hoag (System) / Trydor | Hoag (Sistema) / Trydor |
 | Play Structs | Jogar Structs |
+| Sector (galactic) | Setor (`Setor 044`) |
+| Sector Blitz (the event) | Blitz Setorial; Operation: Sector Blitz → Operação Blitz Setorial |
+| Influence Points (IP) | Pontos de Influência (PI) |
+| King of the Hill Bonus, KOTH Bonus | Bônus Rei da Colina, Bônus RdC |
+| Event Rules / Event Results | Regras do Evento / Resultados do Evento |
+| Guild / Player Leaderboard | Classificação de Guildas / de Jogadores |
+| Scoring, Score | Pontuação |
+| Rival (guild) | Rival |
+| Offensive Raid | Incursão Ofensiva |
+| Under Attack | Sob Ataque |
+| Winning Guild / No Winner | Guilda Vencedora / Sem Vencedor |
+| Remaining (time) | Restante |
+| 1st, 2nd (places) | 1º, 2º; Second Place → Segundo Lugar |
 | Display Name | Nome de usuário |
 | Blockchain / wallet address | Endereço da Conta |
 | Confirmed on chain | Transferência confirmada, Alteração confirmada |

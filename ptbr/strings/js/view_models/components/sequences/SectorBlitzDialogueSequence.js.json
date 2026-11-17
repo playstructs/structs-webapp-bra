@@ -1,0 +1,16 @@
+{
+  "highlight('Priority Alert:')} Rival factions have launched a series of Raids against our assets in an effort to destabilize key ": "highlight('Alerta Prioritário:')} Facções rivais lançaram uma série de Incursões contra nossos recursos para desestabilizar ",
+  "highlight('Galactic Sectors')}.`": "highlight('Setores Galácticos')} estratégicos.`",
+  "`This cannot go unanswered. You are being re-tasked to ": "`Isso não pode ficar sem resposta. Sua nova designação é a ",
+  "highlight('Operation: Sector Blitz')}.`": "highlight('Operação Blitz Setorial')}.`",
+  "`Your objective is to secure our influence in each Sector by launching ": "`Seu objetivo é garantir nossa influência em cada Setor lançando ",
+  "highlight('Raids')} against rival factions.`": "highlight('Incursões')} contra facções rivais.`",
+  "`You can launch Raids and track our progress from the ": "`Você pode lançar Incursões e acompanhar nosso progresso pelo ",
+  "highlight('Fleet Menu')}. Click your Profile Picture to access the menu.`": "highlight('Menu da Frota')}. Clique na sua foto de perfil para abrir o menu.`",
+  "numbers.length === 2 ? 'sectors' : 'sector'": "numbers.length > 1 ? 'os setores' : 'o setor'",
+  " used the opportunity to establish a firm grasp on key galactic sectors, securing ": " aproveitou a oportunidade para firmar o controle de setores galácticos estratégicos, garantindo ",
+  " secured ${sectorList(other.sectors)}": " garantiu ${sectorList(other.sectors)}",
+  " used the opportunity to establish a firm grasp on galactic ${sectorList(first.sectors)} while ${SectorBlitzFormat.list(otherClauses)}.": " aproveitou a oportunidade para firmar o controle sobre ${sectorList(first.sectors)}, enquanto ${SectorBlitzFormat.list(otherClauses)}.",
+  "highlight('Update:')} Operation: Sector Blitz has ended. Activity in the disputed systems is returning to normal.`": "highlight('Atualização:')} A Operação Blitz Setorial foi encerrada. A atividade nos sistemas disputados está voltando ao normal.`",
+  "'A complete report can be viewed in the Fleet Menu.'": "'O relatório completo está disponível no Menu da Frota.'"
+}

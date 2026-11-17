@@ -1,0 +1,6 @@
+{
+  "'CMD Ship jumping to a new planet'": "'Nave de Comando saltando para um novo planeta'",
+  "$keep": [
+    "Status"
+  ]
+}

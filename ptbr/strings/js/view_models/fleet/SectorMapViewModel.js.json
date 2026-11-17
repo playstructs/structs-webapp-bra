@@ -1,0 +1,8 @@
+{
+  "<span class=\"sui-text-header\">Select Sector</span>": "<span class=\"sui-text-header\">Selecione um Setor</span>",
+  "data-sui-tooltip=\"Scroll, Click-and-Drag or swipe to navigate the map.\"": "data-sui-tooltip=\"Role, clique e arraste ou deslize para navegar pelo mapa.\"",
+  "data-sui-tooltip=\"The guild currently controlling this sector.\"": "data-sui-tooltip=\"A guilda que controla este setor no momento.\"",
+  "sui-mod-primary\">Scan Sector</a>": "sui-mod-primary\">Escanear Setor</a>",
+  "MenuPage.setPageTemplateHeaderBtn('Sector Map',": "MenuPage.setPageTemplateHeaderBtn('Mapa de Setores',",
+  "alt=\"Map of the contested sectors\"": "alt=\"Mapa dos setores em disputa\""
+}

@@ -30,7 +30,7 @@
   "hl('Breach')} Planetary Defenses!`": "hl('Ruptura')} nas Defesas Planetárias!`",
   "BREACH_COUNTDOWN: `The Breach takes time--the ": "BREACH_COUNTDOWN: `A Ruptura leva tempo: a ",
   "hl('Breach Countdown')} estimates the time remaining until the enemy steals your Ore.`": "hl('Contagem para Ruptura')} estima quanto falta até o inimigo roubar seu Minério.`",
-  "SUMMON_CMD_SHIP: `You must summon a new CMD Ship to re-secure your planetary Defenses. Select the highlighted tile.`": "SUMMON_CMD_SHIP: `Você precisa convocar uma nova Nave de Comando para deixar suas Defesas Planetárias seguras de novo. Selecione o Setor destacado.`",
+  "SUMMON_CMD_SHIP: `You must summon a new CMD Ship to re-secure your planetary Defenses. Select the highlighted tile.`": "SUMMON_CMD_SHIP: `Você precisa convocar uma nova Nave de Comando para deixar suas Defesas Planetárias seguras de novo. Selecione o Quadrante destacado.`",
   "DEPLOY: `Use the ": "DEPLOY: `Use a habilidade ",
   "hl('Deploy')} ability to summon a new CMD Ship.`": "hl('Implantar')} para convocar uma nova Nave de Comando.`",
   "DEPLOY_MENU_TITLE: `Deploy Struct`": "DEPLOY_MENU_TITLE: `Implantar Estrutura`",

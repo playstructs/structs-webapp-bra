@@ -1,0 +1,18 @@
+{
+  "'Multiple Raids by members of your Guild against the same planet do not earn additional points.'": "'Várias Incursões de membros da sua Guilda contra o mesmo planeta não rendem pontos extras.'",
+  "'Awarded for each planet your Guild was the last to successfully Raid at contest end.'": "'Concedido por cada planeta que sua Guilda foi a última a invadir com sucesso no fim do evento.'",
+  "'Your points earned in this sector.'": "'Seus pontos ganhos neste setor.'",
+  "'Your points earned across all sectors.'": "'Seus pontos ganhos em todos os setores.'",
+  "${SectorBlitzFormat.escape(points)} IP</div>": "${SectorBlitzFormat.escape(points)} PI</div>",
+  "MenuPage.setPageTemplateHeaderBtn('Event Rules',": "MenuPage.setPageTemplateHeaderBtn('Regras do Evento',",
+  "${SECTOR_BLITZ.NAME} is a time-limited event where Guilds compete to acquire": "A ${SECTOR_BLITZ.NAME} é um evento por tempo limitado em que Guildas competem para obter",
+  "<span class=\"sui-text-warning\">Influence Points</span>\n                across galactic sectors.": "<span class=\"sui-text-warning\">Pontos de Influência</span>\n                em setores galácticos.",
+  "<span>Launch at least 1 Raid to qualify.</span>": "<span>Lance pelo menos 1 Incursão para se classificar.</span>",
+  "<span>Earn points for each unique rival planet successfully Raided by your Guild.</span>": "<span>Ganhe pontos por cada planeta rival diferente invadido com sucesso pela sua Guilda.</span>",
+  "<span>The Guild with the most points in a sector controls that sector.</span>": "<span>A Guilda com mais pontos em um setor controla esse setor.</span>",
+  "<span>The Guild that controls the most sectors when the event ends wins the ${SECTOR_BLITZ.NAME}.</span>": "<span>A Guilda que controlar mais setores no fim do evento vence a ${SECTOR_BLITZ.NAME}.</span>",
+  "<span class=\"sui-text-warning\">TIP:</span> Use the \"SCAN\" button on the Fleet Menu to find opponents.": "<span class=\"sui-text-warning\">DICA:</span> Use o botão “ESCANEAR” no Menu da Frota para encontrar oponentes.",
+  "sui-text-header\">Scoring</div>": "sui-text-header\">Pontuação</div>",
+  "this.renderScoringRowHTML('Win an Offensive Raid',": "this.renderScoringRowHTML('Vencer Incursão Ofensiva',",
+  "this.renderScoringRowHTML('King of the Hill Bonus',": "this.renderScoringRowHTML('Bônus Rei da Colina',"
+}

@@ -54,6 +54,14 @@ module.exports = {
     ['fetch(ENDPOINT, {', 'fetch(`${__ptbr.guild.api}/onboarding/events`, {'],
     ['navigator.sendBeacon(ENDPOINT, body)', 'navigator.sendBeacon(`${__ptbr.guild.api}/onboarding/events`, body)'],
   ],
+  // Like GuildAPI's: the contest API lives on the guild, not on this page's host.
+  'js/api/InfluenceAPI.js': [
+    ["this.apiUrl = '/api/influence';", "Object.defineProperty(this, 'apiUrl', {get: () => `${__ptbr.guild.api}/influence`, enumerable: true});"],
+  ],
+  // Compact points take Brazil's decimal comma: 6,3k.
+  'js/util/SectorBlitzFormat.js': [
+    ["? `.${tenth}` : ''", "? `,${tenth}` : ''"],
+  ],
   // 'default' is the browser's own language, which may not be the page's.
   'js/util/DateFormatter.js': [
     [".toLocaleDateString(\n      'default',", ".toLocaleDateString(\n      'pt-BR',"],
