@@ -18,3 +18,14 @@
   src: url(/ptbr/fonts/ExtremeHazard-ptbr.woff2) format('woff2');
   unicode-range: U+AA, U+B0, U+BA, U+C0-C3, U+C7, U+C9-CA, U+CD, U+D3-D5, U+DA, U+DC, U+E0-E3, U+E7, U+E9-EA, U+ED, U+F3-F5, U+FA, U+FC, U+2013-2014, U+2018-2019, U+201C-201D, U+2026;
 }
+
+/*
+ * VitalityDAO's motto under its logo in sign-up (ConnectingToCorp2,
+ * Orientation2): one word a line, as it is too wide for one.
+ */
+.snc-logo-wrapper .sui-text-header {
+  left: 0;
+  right: 0;
+  width: min-content;
+  margin: 0 auto;
+}

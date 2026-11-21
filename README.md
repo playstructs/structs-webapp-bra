@@ -52,7 +52,7 @@ node (`ptbr/runtime/guild.js`):
 1. `?guild=<id>` in the address,
 2. else the guild of the player saved in this browser,
 3. else the guild last used here,
-4. else the default guild (`PTBR_GUILD_ID`, SN Corp `0-5`).
+4. else the default guild (`PTBR_GUILD_ID`, VitalityDAO `0-7`).
 
 It reads that guild's `guild.json` (the endpoint the guild set on chain) for its
 `guild_api`, `grass_nats_websocket` and `client_websocket`. If the guild can't
@@ -63,7 +63,7 @@ session cookie would be third-party here.
 
 | Variable (build time) | Default | |
 |---|---|---|
-| `PTBR_GUILD_ID` | `0-5` | the guild for new players |
+| `PTBR_GUILD_ID` | `0-7` | the guild for new players (VitalityDAO) |
 | `PTBR_LCD_URL` | `https://public.testnet.structs.network` | the chain node guilds are found on |
 | `PTBR_GUILD_API` | — | a fixed guild API (a local guild), skipping the search |
 | `PTBR_GRASS_URL`, `PTBR_CHAIN_WS` | — | override what the guild publishes |

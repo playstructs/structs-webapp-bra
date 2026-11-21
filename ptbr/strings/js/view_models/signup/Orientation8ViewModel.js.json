@@ -2,6 +2,7 @@
   "alt=\"ST-21 Spearpoint CMD Ship\"": "alt=\"Nave de Comando ST-21 Spearpoint\"",
   "<span class=\"sui-text-display\">CMD SHIP</span>": "<span class=\"sui-text-display\">NAVE DE COMANDO</span>",
   "`You have been issued a ST-21 \"Spearpoint\" CMD Ship to explore the uncharted regions for Alpha-seeded worlds.`": "`Você recebeu uma Nave de Comando ST-21 \"Spearpoint\" para explorar as regiões desconhecidas em busca de mundos semeados com Alfa.`",
+  "'SN.Corporation'": "'VitalityDAO'",
   "$keep": [
     "ST-21 \"Spearpoint\""
   ]

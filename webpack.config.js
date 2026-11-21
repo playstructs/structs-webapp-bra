@@ -25,8 +25,8 @@ const PUBLIC_DIRS = [
 const SKIP = /^(index\.php|\.htaccess|data\/|js\/(index|test|vendors-)|js\/manifest\.json|js\/workers\/)|(^|\/)\.DS_Store$/;
 
 // Where the page finds its guild (ptbr/runtime/guild.js). The defaults are
-// the chain's public node and SN Corp, the guild structs-webapp's beta serves.
-const DEFAULT_GUILD_ID = '0-5';
+// the chain's public node and VitalityDAO, the community guild this site serves.
+const DEFAULT_GUILD_ID = '0-7';
 const DEFAULT_LCD = 'https://public.testnet.structs.network';
 // Used only when no guild on chain can be read and none was read before.
 const FALLBACK = {

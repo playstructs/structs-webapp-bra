@@ -18,6 +18,10 @@ module.exports = {
   ],
   'js/api/GuildAPI.js': [
     ["this.apiUrl = '/api';", "Object.defineProperty(this, 'apiUrl', {get: () => __ptbr.guild.api, enumerable: true});"],
+    // A guild API may serve several guilds (VitalityDAO 0-7 shares SN Corp's),
+    // and /guild/this is its host's own. Ask for the guild this page chose,
+    // so sign-up and the rest act for it.
+    ['`${this.apiUrl}/guild/this`', '`${this.apiUrl}/guild/${__ptbr.guild.id ?? \'this\'}`'],
     // /auth/token takes the same signed login as /auth/login and answers with a bearer token.
     [
       'const jsonResponse = await this.ajax.post(`${this.apiUrl}/auth/login`, loginRequestDTO, {...options, reauthenticate: false});',

@@ -8,7 +8,7 @@ is built. Nothing in the submodule is edited.
 | `strings/<upstream path>.json` | Portuguese for one upstream file: `{"exact source text": "replacement"}` |
 | `patches.cjs` | Changes that are not text: the guild connection, the telemetry name, date locale, translating struct-type data where it is read |
 | `runtime/` | Loaded before webapp's entry: `__ptbr.t()` with `terms.json` (Portuguese for game data from the guild API) and `__ptbr.guild` (`guild.js`, which guild the page plays through) |
-| `public/` | Static files served over webapp's: `ptbr/ptbr.css` and the accented letters in `ptbr/fonts/`, and the Portuguese banner frames in `lottie/` |
+| `public/` | Static files served over webapp's: `ptbr/ptbr.css` and the accented letters in `ptbr/fonts/`, the Portuguese banner frames in `lottie/`, VitalityDAO's logo in `ptbr/img/` and its `guild.json` (guild `0-7`'s on-chain endpoint, `https://estrut.net/guild.json`) |
 | `art/fonts.py` | Draws those letters on webapp's pixel fonts' grids (needs fonttools, brotli); `fonts.json` records the upstream fonts |
 | `art/banners.py` | Draws those banner frames from webapp's (needs Pillow); `banners.json` records which upstream frames they replace |
 | `page.cjs` | Renders webapp's Twig page (`templates/`) to `index.html` |

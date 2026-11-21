@@ -1,0 +1,40 @@
+{
+  "guild": {
+    "schema_version": 1,
+    "id": "0-7",
+    "name": "VitalityDAO",
+    "description": "Players - Alpha - Crypto",
+    "tag": "VTLY",
+    "logo": "https://estrut.net/ptbr/img/vitality-logo.png",
+    "webapp": "estrut.net",
+    "website": "https://dsc.gg/vitalitydao",
+    "recruiting": {
+      "status": "open"
+    },
+    "socials": {
+      "bluesky": "",
+      "facebook": "",
+      "farcaster": "",
+      "instagram": "",
+      "twitch": "",
+      "x": "https://x.com/VitalityDAO",
+      "youtube": "",
+      "discord_contact": "",
+      "discord_server": "https://discord.com/invite/xGN5fNXxPg",
+      "telegram_contact": "",
+      "telegram_channel": ""
+    },
+    "denom": {
+      "6": "vida",
+      "0": "uvida"
+    },
+    "services": {
+      "guild_api": "https://beta.playstructs.com/api/",
+      "reactor_api": "https://public.testnet.structs.network/",
+      "client_websocket": "wss://public.testnet.structs.network:26657/websocket",
+      "grass_nats_websocket": "wss://beta.playstructs.com:1443",
+      "matrix": "https://matrix.beta.playstructs.com",
+      "explorer": ""
+    }
+  }
+}
