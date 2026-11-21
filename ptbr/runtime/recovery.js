@@ -12,10 +12,12 @@
 // whose join minimum is 0 without anyone else's consent (the chain asks only
 // for the player's own GuildMembership permission, which a recovery key holds),
 // leaves the old guild and connects the player to the new guild's entry
-// substation. Recovery then waits for the chain to show the move and for the
-// guild API to know the player and accept their login (its indexer trails the
-// chain by a few blocks).
+// substation. It is signed directly, not through webapp's signing queue, which
+// needs a guild API session the player can't have yet. Recovery then waits
+// for the chain to show the move and for the guild API to know the player and
+// accept their login (its indexer trails the chain by a few blocks).
 import {chain} from './guild.js';
+import {FEE} from '../../structs-webapp/src/js/constants/Fee.js';
 
 const JOIN = '/structs.structs.MsgGuildMembershipJoin';
 const POLL_MS = 3000;
@@ -72,6 +74,49 @@ async function playerOf(address) {
 }
 
 /**
+ * Signs and broadcasts the join with the recovery key.
+ *
+ * Not through webapp's signing queue: the queue takes each transaction's chain
+ * context from the guild API's /block, which answers only a logged-in session,
+ * and the player can log in only once they have joined. The signing client
+ * reads the account and the chain from the node itself.
+ */
+async function sendJoin(authManager, address, guildId, signal) {
+  const signing = authManager.signingClientManager;
+  await signing.initSigningClient();
+  signal.throwIfAborted();
+
+  // An earlier attempt may have left its join in the queue, where it waits for
+  // a session it cannot get. It would only be refused once the player is in.
+  // The queue refuses while it is busy retrying it, so this is tried a few times.
+  for (const tx of signing.queue.immediateQueue.filter(tx => tx.message?.typeUrl === JOIN)) {
+    for (let attempt = 0; attempt < 5; attempt++) {
+      const cancelled = await signing.queue.cancelQueueItem(tx.id).catch(error => {
+        console.debug(`[ptbr] recovery: ${error.message}`);
+        return false;
+      });
+      if (cancelled) break;
+      await pause(1000, signal);
+    }
+  }
+
+  // guildId alone: the player is the signer's own, the substation the guild's entry substation.
+  const message = {
+    typeUrl: JOIN,
+    value: signing.registry.lookupType(JOIN).fromPartial({creator: address, guildId}),
+  };
+  try {
+    const hash = await authManager.gameState.signingClient.signAndBroadcastSync(address, [message], FEE, '');
+    console.info(`[ptbr] recovery: join sent, ${hash}`);
+  } catch (error) {
+    // Refused at check (already a member, for one) or the node unreachable:
+    // the chain, read next, decides either way.
+    console.warn(`[ptbr] recovery: join not sent: ${error.message}`);
+  }
+  signal.throwIfAborted();
+}
+
+/**
  * Makes sure a recovered player is in this guild before any guild API call,
  * moving them here from another guild when they can be.
  *
@@ -125,13 +170,7 @@ async function ensureInThisGuild(authManager, address, signal, say = () => {}) {
   console.info(`[ptbr] recovery: moving ${player.playerId} from guild ${player.guildId || '(none)'} to ${here.id}`);
   say(`Sua conta pertence a outra guilda. Transferindo-a para a ${name}…`);
 
-  const signing = authManager.signingClientManager;
-  await signing.initSigningClient();
-  signal.throwIfAborted();
-  // guildId alone: the player is the signer's own, the substation the guild's entry substation.
-  const id = signing.queue.enqueueImmediate(JOIN, {guildId: here.id});
-  const tx = await signing.queue.whenSettled(id, signal);
-  console.debug(`[ptbr] recovery: join ${tx.status}`, tx.error ?? '');
+  await sendJoin(authManager, address, here.id, signal);
 
   // The chain, not the transaction's outcome, decides: a join that landed
   // after its outcome was lost still counts.
