@@ -7,7 +7,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const webpack = require('webpack');
 const {UPSTREAM_SRC} = require('./ptbr/translate.cjs');
-const {renderPage} = require('./ptbr/page.cjs');
+const {renderPage, renderLeaderboard} = require('./ptbr/page.cjs');
 
 const upstreamConfigFile = path.join(UPSTREAM_SRC, 'webpack.config.js');
 if (!fs.existsSync(upstreamConfigFile)) {
@@ -22,7 +22,7 @@ const PUBLIC_DIRS = [
 
 // Upstream's public/ is served by PHP: skip the front controller, Apache's
 // rules and anything a local upstream build left there (ours replace them).
-const SKIP = /^(index\.php|\.htaccess|data\/|js\/(index|test|vendors-)|js\/manifest\.json|js\/workers\/)|(^|\/)\.DS_Store$/;
+const SKIP = /^(index\.php|\.htaccess|data\/|js\/(index|sectorBlitz|test|vendors-)|js\/manifest\.json|js\/workers\/)|(^|\/)\.DS_Store$/;
 
 // The guild this site serves, VitalityDAO, fixed: never looked up, nor set
 // per build (ptbr/runtime/guild.js). Its services are read from its guild.json
@@ -79,6 +79,18 @@ class PtbrSitePlugin {
         compilation.contextDependencies.add(path.join(__dirname, 'ptbr/strings/templates'));
         stale.forEach(message => compilation.warnings.push(new WebpackError(`ptbr: ${message}`)));
         compilation.emitAsset('index.html', new sources.RawSource(html), {minimized: true});
+
+        // The public Sector Blitz leaderboard, at /sector-blitz and /sector-blitz/<sector>.
+        const leaderboardFiles = compilation.entrypoints.get('sectorBlitz').getFiles().filter(file => file.endsWith('.js'));
+        if (leaderboardFiles.length !== 1) {
+          throw new Error('Expected one JavaScript bundle for sectorBlitz');
+        }
+        const leaderboard = renderLeaderboard(leaderboardFiles[0]);
+        leaderboard.dependencies.forEach(file => compilation.fileDependencies.add(file));
+        leaderboard.stale.forEach(message => compilation.warnings.push(new WebpackError(`ptbr: ${message}`)));
+        for (const [file, page] of Object.entries(leaderboard.pages)) {
+          compilation.emitAsset(file, new sources.RawSource(page), {minimized: true});
+        }
       });
     });
   }
@@ -105,7 +117,11 @@ module.exports = (env, argv) => {
   return {
     ...upstream,
     context: UPSTREAM_SRC,
-    entry: {index: [path.join(__dirname, 'ptbr/runtime/index.js'), upstream.entry.index]},
+    // Both pages start with the overlay's runtime: its guild is where they read from.
+    entry: {
+      index: [path.join(__dirname, 'ptbr/runtime/index.js'), upstream.entry.index],
+      sectorBlitz: [path.join(__dirname, 'ptbr/runtime/index.js'), upstream.entry.sectorBlitz],
+    },
     output: {
       ...upstream.output,
       path: path.resolve(__dirname, 'dist'),

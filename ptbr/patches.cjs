@@ -57,6 +57,13 @@ module.exports = {
     ['fetch(ENDPOINT, {', 'fetch(`${__ptbr.guild.api}/onboarding/events`, {'],
     ['navigator.sendBeacon(ENDPOINT, body)', 'navigator.sendBeacon(`${__ptbr.guild.api}/onboarding/events`, body)'],
   ],
+  // The public leaderboard and spectate read the contest from VitalityDAO's
+  // guild API too. The leaderboard page loads none of the game, so its first
+  // read waits for the guild's services here.
+  'js/api/PublicSectorBlitzAPI.js': [
+    ["this.apiUrl = '/api/public/sector-blitz';", "Object.defineProperty(this, 'apiUrl', {get: () => `${__ptbr.guild.api}/public/sector-blitz`, enumerable: true});"],
+    ['const response = await fetch(`${this.apiUrl}', 'await __ptbr.guild.ready;\n    const response = await fetch(`${this.apiUrl}'],
+  ],
   // Like GuildAPI's: the contest API lives on the guild, not on this page's host.
   'js/api/InfluenceAPI.js': [
     ["this.apiUrl = '/api/influence';", "Object.defineProperty(this, 'apiUrl', {get: () => `${__ptbr.guild.api}/influence`, enumerable: true});"],

@@ -1,0 +1,8 @@
+{
+  "<html class=\"no-js\" lang=\"en-us\">": "<html class=\"no-js\" lang=\"pt-BR\">",
+  "<title>Sector Blitz Leaderboard | Structs</title>": "<title>Classificação da Blitz Setorial | estrut.net</title>",
+  "content=\"Live standings for Sector Blitz, the Structs sector control event.\"": "content=\"Classificação ao vivo da Blitz Setorial, o evento de controle de Setores do Structs.\"",
+  "sui-mod-active\" href=\"{{ path('app_sector_blitz') }}\">Sector Blitz</a>": "sui-mod-active\" href=\"{{ path('app_sector_blitz') }}\">Blitz Setorial</a>",
+  "href=\"{{ path('app_game') }}\">Play Now</a>": "href=\"{{ path('app_game') }}\">Jogar Agora</a>",
+  "alt=\"3 dots loading animation\"": "alt=\"animação de carregamento com 3 pontos\""
+}

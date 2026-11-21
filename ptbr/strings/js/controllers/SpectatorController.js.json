@@ -1,0 +1,17 @@
+{
+  "title: 'Spectating',": "title: 'Assistindo',",
+  "message: 'Connecting to the battle...',": "message: 'Conectando à batalha...',",
+  "'This battle could not be loaded. It may have just ended. Try again from the Event Leaderboard.'": "'Não foi possível carregar esta batalha. Talvez tenha terminado há pouco. Tente de novo pela Classificação do Evento.'",
+  "'This battle is over. Pick another from Current Battles on the Event Leaderboard.'": "'Esta batalha terminou. Escolha outra em Batalhas Atuais, na Classificação do Evento.'",
+  "'Sector Blitz is not running right now, so there are no battles to watch.'": "'A Blitz Setorial não está acontecendo agora, então não há batalhas para assistir.'",
+  "|| 'The defender')": "|| 'O defensor')",
+  "|| 'The attacker')": "|| 'O invasor')",
+  "`${attacker} won the raid.`": "`${attacker} venceu a incursão.`",
+  "`${defender} defended the planet.`": "`${defender} defendeu o planeta.`",
+  "`${attacker} retreated. ${defender} keeps the planet.`": "`${attacker} recuou. ${defender} mantém o planeta.`",
+  "`${defender}'s planet was demilitarized.`": "`${defender} teve o planeta desmilitarizado.`",
+  "`Battle over. ${messages[detail?.status] ?? ''}`": "`Fim da batalha. ${messages[detail?.status] ?? ''}`",
+  "$keep": [
+    "Spectator"
+  ]
+}

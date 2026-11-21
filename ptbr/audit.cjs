@@ -175,9 +175,9 @@ function strings(code) {
 }
 
 function markup(code) {
-  const found = [];
-  code.split('\n').forEach((line, index) => fromMarkup(line).forEach(text => found.push({line: index + 1, text})));
-  return found;
+  // Whole, not line by line: a tag may span lines, one attribute per line.
+  const lineOf = text => code.slice(0, Math.max(0, code.indexOf(text))).split('\n').length;
+  return fromMarkup(code).map(text => ({line: lineOf(text), text}));
 }
 
 // ---- Report ----

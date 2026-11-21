@@ -1,0 +1,20 @@
+{
+  "public-leaderboard-title\">Event Leaderboard</h1>": "public-leaderboard-title\">Classificação do Evento</h1>",
+  "public-leaderboard-title\">${SectorBlitzFormat.sectorLabel(this.sector)} Leaderboard</h1>": "public-leaderboard-title\">Classificação do ${SectorBlitzFormat.sectorLabel(this.sector)}</h1>",
+  "return 'N/A';": "return 'N/D';",
+  "emptyHTML('Sector data is currently unavailable.')": "emptyHTML('Os dados dos Setores estão indisponíveis no momento.')",
+  "isResults ? 'Event Results' :": "isResults ? 'Resultados do Evento' :",
+  "`${this.remainingText(summary)} Remaining`": "`Restante: ${this.remainingText(summary)}`",
+  "`${SectorBlitzFormat.sectorLabel(this.sector)} Statistics`": "`Estatísticas do ${SectorBlitzFormat.sectorLabel(this.sector)}`",
+  "public-leaderboard-play-btn\">Play Now</a>": "public-leaderboard-play-btn\">Jogar Agora</a>",
+  "emptyHTML('Currently unavailable')": "emptyHTML('Indisponível no momento')",
+  "this.listCardHTML('Top Guilds',": "this.listCardHTML('Melhores Guildas',",
+  "this.listCardHTML('Top Players',": "this.listCardHTML('Melhores Jogadores',",
+  "row), 'No Activity'));": "row), 'Sem Atividade'));",
+  "public-battle-spectate-btn\">Spectate</a>": "public-battle-spectate-btn\">Assistir</a>",
+  "this.listCardHTML('Current Battles',": "this.listCardHTML('Batalhas Atuais',",
+  "'No Battles in Progress'));": "'Nenhuma Batalha em Andamento'));",
+  "$keep": [
+    "Structs"
+  ]
+}

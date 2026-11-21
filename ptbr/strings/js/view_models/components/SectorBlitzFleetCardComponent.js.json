@@ -3,8 +3,5 @@
   "? 'Event Results'": "? 'Resultados do Evento'",
   ": `<span id=\"${this.remainingId}\">${SectorBlitzFormat.remaining(this.sectorBlitzManager.getMsRemaining())}</span> Remaining`;": ": `Restante: <span id=\"${this.remainingId}\">${SectorBlitzFormat.remaining(this.sectorBlitzManager.getMsRemaining())}</span>`;",
   "<span class=\"sui-text-header\">Event Rules</span>": "<span class=\"sui-text-header\">Regras do Evento</span>",
-  "<div class=\"sector-blitz-empty\">Sector data is currently unavailable.</div>": "<div class=\"sector-blitz-empty\">Os dados dos Setores estão indisponíveis no momento.</div>",
-  "            Other\n          </span>": "            Outras\n          </span>",
-  ": 'No Winner';": ": 'Sem Vencedor';",
-  "<div class=\"sui-text-header\">Winning Guild</div>": "<div class=\"sui-text-header\">Guilda Vencedora</div>"
+  "<div class=\"sector-blitz-empty\">Sector data is currently unavailable.</div>": "<div class=\"sector-blitz-empty\">Os dados dos Setores estão indisponíveis no momento.</div>"
 }
