@@ -46,26 +46,31 @@ Commit the submodule pointer together with the overlay. See
 
 ## Which guild
 
-Before webapp's code starts, the page picks a guild using the chain's public
-node (`ptbr/runtime/guild.js`):
+The site is VitalityDAO's: its guild is `0-7`, fixed in `webpack.config.js`
+(`GUILD_ID`), and never looked up. Webapp normally asks its guild API which
+guild it is (`/guild/this`), but VitalityDAO shares SN Corp's API, so the page
+asks for `/guild/0-7` instead.
 
-1. `?guild=<id>` in the address,
-2. else the guild of the player saved in this browser,
-3. else the guild last used here,
-4. else the default guild (`PTBR_GUILD_ID`, VitalityDAO `0-7`).
+Before webapp's code starts, the page reads `0-7`'s `guild.json` (the
+endpoint the guild set on chain) for its `guild_api`, `grass_nats_websocket`
+and `client_websocket` (`ptbr/runtime/guild.js`). If it can't be read, it uses
+what it last read, then the fallback in `webpack.config.js`. Requests carry a
+bearer token from the guild's `/api/auth/token` (the same signed login as
+`/api/auth/login`), since a guild's session cookie would be third-party here.
 
-It reads that guild's `guild.json` (the endpoint the guild set on chain) for its
-`guild_api`, `grass_nats_websocket` and `client_websocket`. If the guild can't
-be reached, it uses what it last read for it, then any other guild on chain that
-publishes an API. Requests carry a bearer token from the guild's
-`/api/auth/token` (the same signed login as `/api/auth/login`), since a guild's
-session cookie would be third-party here.
+Account recovery asks the chain which guild the key's player is in before
+it calls the guild API, since a shared API may log in another guild's player.
+A player of another guild is moved here first: the key signs
+`MsgGuildMembershipJoin` for this guild (allowed when its join minimum is 0),
+and recovery goes on once the chain shows the move and the guild API knows
+the player. Recovery stops instead when the player owns their guild, the
+guild asks a join minimum, or the chain can't be read
+(`ptbr/runtime/recovery.js`).
 
 | Variable (build time) | Default | |
 |---|---|---|
-| `PTBR_GUILD_ID` | `0-7` | the guild for new players (VitalityDAO) |
-| `PTBR_LCD_URL` | `https://public.testnet.structs.network` | the chain node guilds are found on |
-| `PTBR_GUILD_API` | — | a fixed guild API (a local guild), skipping the search |
+| `PTBR_LCD_URL` | `https://public.testnet.structs.network` | the chain node the guild is read from |
+| `PTBR_GUILD_API` | — | a fixed guild API (a local guild in development), skipping guild.json |
 | `PTBR_GRASS_URL`, `PTBR_CHAIN_WS` | — | override what the guild publishes |
 
 ## Building and serving

@@ -3,14 +3,14 @@
 //
 // structs-webapp is served by its guild and reaches the guild API at /api,
 // with a session cookie, and GRASS and the chain node on the same host. This
-// page hosts none of them: these patches send webapp to the guild that
-// ptbr/runtime/guild.js chose, with a bearer token instead of the cookie.
+// page hosts none of them: these patches send webapp to VitalityDAO's (0-7)
+// services, as ptbr/runtime/guild.js reads them, with a bearer token instead
+// of the cookie.
 module.exports = {
   'js/index.js': [
     // Nothing below may run before the guild, and so its services, is known.
     // The tutorial is a simulation and needs no guild.
     ['const tutorialMode = TutorialMode.isActive();', 'if (!TutorialMode.isActive()) await __ptbr.guild.ready;\nconst tutorialMode = TutorialMode.isActive();'],
-    ['global.guildAPI = guildAPI;', 'global.guildAPI = guildAPI;\n__ptbr.guild.onSwitch(async () => { gameState.thisGuild = await guildAPI.getThisGuild(); });'],
     ['`ws://${window.location.hostname}:1443`', '(__ptbr.guild.grass || `ws://${window.location.hostname}:1443`)'],
   ],
   'js/managers/SigningClientManager.js': [
@@ -18,10 +18,9 @@ module.exports = {
   ],
   'js/api/GuildAPI.js': [
     ["this.apiUrl = '/api';", "Object.defineProperty(this, 'apiUrl', {get: () => __ptbr.guild.api, enumerable: true});"],
-    // A guild API may serve several guilds (VitalityDAO 0-7 shares SN Corp's),
-    // and /guild/this is its host's own. Ask for the guild this page chose,
-    // so sign-up and the rest act for it.
-    ['`${this.apiUrl}/guild/this`', '`${this.apiUrl}/guild/${__ptbr.guild.id ?? \'this\'}`'],
+    // This page's guild is fixed (0-7), never looked up: /guild/this is the
+    // API host's own guild, and VitalityDAO shares SN Corp's API.
+    ['`${this.apiUrl}/guild/this`', '`${this.apiUrl}/guild/${__ptbr.guild.id}`'],
     // /auth/token takes the same signed login as /auth/login and answers with a bearer token.
     [
       'const jsonResponse = await this.ajax.post(`${this.apiUrl}/auth/login`, loginRequestDTO, {...options, reauthenticate: false});',
@@ -32,23 +31,23 @@ module.exports = {
       'const jsonResponse = await this.ajax.post(`${this.apiUrl}/auth/logout`, {}, options);',
       'const jsonResponse = await this.ajax.post(`${this.apiUrl}/auth/logout`, {}, options);\n    __ptbr.guild.setToken(null);',
     ],
-    // A code made on another device is kept by that player's guild.
-    [
-      'const jsonResponse = await this.ajax.get(`${this.apiUrl}/auth/activation-code/${activationCode}`);',
-      'const jsonResponse = await __ptbr.guild.findOnGuilds(\n'
-      + '      () => this.ajax.get(`${this.apiUrl}/auth/activation-code/${activationCode}`),\n'
-      + '      answer => answer?.success === true && answer.data != null\n'
-      + '    );',
-    ],
   ],
   'js/framework/JsonAjaxer.js': [
     ["headers: {\n        'Content-Type': 'application/json'\n      },", "headers: {\n        'Content-Type': 'application/json',\n        ...__ptbr.guild.headers()\n      },"],
   ],
   'js/managers/AuthManager.js': [
-    // A recovery key names a player, who plays through their own guild.
+    // Before any guild API call, recovery checks on chain that the player is in
+    // this guild, moving them here from another guild, and stops if they are
+    // not: a shared guild API may log in another guild's player (recovery.js).
+    [
+      'import {MenuPage} from "../framework/MenuPage";',
+      'import {MenuPage} from "../framework/MenuPage";\nimport {MenuWaitingViewModel} from "../view_models/generic/MenuWaitingViewModel";',
+    ],
     [
       'const primaryAddress = this.gameState.signingAccount.address;\n    const guildId = this.gameState.thisGuild.id;',
-      'const primaryAddress = this.gameState.signingAccount.address;\n    await __ptbr.guild.followAddress(primaryAddress);\n    const guildId = this.gameState.thisGuild.id;',
+      'const primaryAddress = this.gameState.signingAccount.address;\n'
+      + '    if (!await __ptbr.recovery.ensureInThisGuild(this, primaryAddress, signal, MenuWaitingViewModel.setMessage)) return false;\n'
+      + '    const guildId = this.gameState.thisGuild.id;',
     ],
   ],
   'js/telemetry/OnboardingTelemetry.js': [

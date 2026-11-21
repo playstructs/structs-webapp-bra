@@ -24,11 +24,12 @@ const PUBLIC_DIRS = [
 // rules and anything a local upstream build left there (ours replace them).
 const SKIP = /^(index\.php|\.htaccess|data\/|js\/(index|test|vendors-)|js\/manifest\.json|js\/workers\/)|(^|\/)\.DS_Store$/;
 
-// Where the page finds its guild (ptbr/runtime/guild.js). The defaults are
-// the chain's public node and VitalityDAO, the community guild this site serves.
-const DEFAULT_GUILD_ID = '0-7';
+// The guild this site serves, VitalityDAO, fixed: never looked up, nor set
+// per build (ptbr/runtime/guild.js). Its services are read from its guild.json
+// on the chain's public node.
+const GUILD_ID = '0-7';
 const DEFAULT_LCD = 'https://public.testnet.structs.network';
-// Used only when no guild on chain can be read and none was read before.
+// Used only when the guild's guild.json can't be read and none was read before.
 const FALLBACK = {
   api: 'https://beta.playstructs.com/api',
   grass: 'wss://beta.playstructs.com:1443',
@@ -85,7 +86,7 @@ class PtbrSitePlugin {
 
 module.exports = (env, argv) => {
   const config = {
-    guildId: process.env.PTBR_GUILD_ID || DEFAULT_GUILD_ID,
+    guildId: GUILD_ID,
     lcd: process.env.PTBR_LCD_URL || DEFAULT_LCD,
     // Set, these override what the guild publishes.
     api: (process.env.PTBR_GUILD_API || '').replace(/\/+$/, ''),
