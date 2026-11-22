@@ -7,10 +7,12 @@
 // shown, by overlay entries that call these helpers, never where it is read.
 //
 // __ptbr.guild is the guild this page plays through (guild.js), and
-// __ptbr.recovery moves a recovered player of another guild into it (recovery.js).
+// __ptbr.recovery moves a recovered player of another guild into it (recovery.js),
+// and __ptbr.player makes a new player's account and saves its key (player.js).
 import terms from './terms.json';
 import {guild} from './guild.js';
 import {recovery} from './recovery.js';
+import {player} from './player.js';
 
 const lookup = new Map(Object.entries(terms));
 const reported = new Set();
@@ -20,6 +22,8 @@ globalThis.__ptbr = Object.freeze({
   guild,
 
   recovery,
+
+  player,
 
   /**
    * @param {*} text English game data

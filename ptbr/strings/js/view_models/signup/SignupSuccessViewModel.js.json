@@ -1,6 +1,6 @@
 {
   "pageHeader.pageLabel = 'Success!';": "pageHeader.pageLabel = 'Sucesso!';",
   ">Success!</span>": ">Sucesso!</span>",
-  "<div>Your account has been created. Keep your Recovery Key safe; you will need it if you lose access to your account.</div>": "<div>Sua conta foi criada. Guarde bem sua Chave de Recuperação; você precisará dela se perder o acesso à sua conta.</div>",
+  "<div>Your account has been created. Keep your Recovery Key safe; you will need it if you lose access to your account.</div>": "<div>Sua conta foi criada. Para não perder o acesso, baixe seu jogador no menu Conta e guarde o arquivo em um lugar seguro.</div>",
   ">Return To Game</button>": ">Voltar ao Jogo</button>"
 }

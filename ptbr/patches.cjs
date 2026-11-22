@@ -97,4 +97,35 @@ module.exports = {
     ]);
     return structType;`],
   ],
+  // estrut.net has no recovery key step: once the player has a name, the
+  // account is made (ptbr/runtime/player.js), and the key is downloaded from
+  // the Account page instead.
+  'js/view_models/signup/SetUsernameViewModel.js': [
+    ["MenuPage.router.goto('Auth', 'signupRecoveryKeyIntro');", "MenuPage.router.goto('Auth', 'signupCreateAccount');"],
+  ],
+  'js/controllers/AuthController.js': [
+    ['import {MenuPage} from "../framework/MenuPage";', 'import {MenuPage} from "../framework/MenuPage";\nimport {PageHeader} from "../view_models/templates/partials/PageHeader";'],
+    [
+      '  signupRecoveryKeyIntro() {\n',
+      '  signupCreateAccount() {\n'
+      + '    if (this.gameState.mnemonic === null) {\n'
+      + '      this.gameState.mnemonic = this.walletManager.createMnemonic();\n'
+      + '    }\n'
+      + '    __ptbr.player.createAccount(this.gameState, this.authManager, {MenuPage, PageHeader});\n'
+      + '  }\n\n'
+      + '  signupRecoveryKeyIntro() {\n',
+    ],
+  ],
+  // The Account page saves the player's key in place of logging out.
+  'js/view_models/account/AccountIndexViewModel.js': [
+    ["this.logoutBtnId = 'account-menu-logout-btn';", "this.downloadPlayerBtnId = 'account-menu-download-player-btn';"],
+    [
+      "document.getElementById(this.logoutBtnId).addEventListener('click', () => {\n      MenuPage.router.goto('Account', 'logoutConfirm');\n    });",
+      "document.getElementById(this.downloadPlayerBtnId).addEventListener('click', () => {\n      __ptbr.player.download(this.gameState.mnemonic, this.gameState.keyPlayers[PLAYER_TYPES.PLAYER]);\n    });",
+    ],
+    [
+      '<button id="${this.logoutBtnId}" class="sui-screen-btn sui-mod-destructive">Log Out</button>',
+      '<button id="${this.downloadPlayerBtnId}" class="sui-screen-btn sui-mod-secondary" ${this.gameState.mnemonic ? \'\' : \'disabled\'}>Download Player</button>',
+    ],
+  ],
 };
