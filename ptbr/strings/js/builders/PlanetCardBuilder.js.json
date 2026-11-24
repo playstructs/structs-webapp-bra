@@ -2,6 +2,8 @@
   "alt=\"3 dots loading animation\"": "alt=\"Animação de carregamento com três pontos\"",
   "primaryBtnLabel = 'Command';": "primaryBtnLabel = 'Comandar';",
   "alphaBaseCard.alertMessage = 'All Alpha extracted.';": "alphaBaseCard.alertMessage = 'Todo o Alfa foi extraído.';",
+  "'Insufficient Energy. Deactivate Structs to reduce Energy draw.'": "'Energia insuficiente. Desative Estruturas para reduzir o consumo de Energia.'",
+  "alphaBaseCard.alertMessage = 'Failed to depart.';": "alphaBaseCard.alertMessage = 'Falha ao partir.';",
   "secondaryBtnLabel = 'Depart';": "secondaryBtnLabel = 'Partir';",
   "alphaBaseCard.alertMessage = 'Depart planet?';": "alphaBaseCard.alertMessage = 'Deixar o planeta?';",
   "`Fleet will travel to an undiscovered world.`": "`A Frota viajará para um mundo desconhecido.`",
